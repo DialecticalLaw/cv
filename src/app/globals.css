@@ -11,4 +11,30 @@
 
 :root {
   --main-font: 'Jura';
+  --light-shadow: #a5a5a5;
+  --bg-color: whitesmoke;
+  --dark-color: #3e3e3e;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1440px;
+  min-height: 100dvh;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  margin-top: 8rem;
 }

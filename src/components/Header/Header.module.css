@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: 0 auto;
+  background-color: rgba(245, 245, 245, 0.512);
+  backdrop-filter: blur(0.5rem);
+}
+
+.nav_list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  list-style: none;
+}
+
+.nav_item {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--main-font);
+  border-bottom: 0.3rem solid transparent;
+  cursor: pointer;
+}
+
+.nav_item:hover {
+  border-color: var(--dark-color);
+}
+
+.nav_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
