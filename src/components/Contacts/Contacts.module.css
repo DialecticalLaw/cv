@@ -1,7 +1,3 @@
-.section {
-  padding: 2rem;
-}
-
 .list {
   display: flex;
   flex-direction: column;

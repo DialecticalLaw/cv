@@ -1,0 +1,12 @@
+.skills_list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.icon {
+  width: 7rem;
+  height: 7rem;
+}

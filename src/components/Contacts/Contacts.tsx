@@ -7,7 +7,7 @@ import githubIcon from '@/assets/img/github.svg';
 
 export function Contacts() {
   return (
-    <section className={styles.section}>
+    <section>
       <ul className={styles.list}>
         <li className={styles.list_item}>
           <Image className={styles.icon} src={gmailIcon} alt="email" />
