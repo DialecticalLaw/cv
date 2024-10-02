@@ -1,3 +1,10 @@
+import { Contacts } from '@/components/Contacts/Contacts';
+import styles from './page.module.css';
+
 export default function Home() {
-  return <div>Some text</div>;
+  return (
+    <main className={styles.main}>
+      <Contacts />
+    </main>
+  );
 }
