@@ -9,8 +9,11 @@ import { Projects } from '@/components/Projects/Projects';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Contacts />
-      <Summary />
+      <div className={styles.contacts_summary}>
+        <Contacts />
+        <Summary />
+      </div>
+
       <Skills />
       <Education />
       <Languages />

@@ -11,9 +11,11 @@
 
 :root {
   --main-font: 'Jura';
-  --light-shadow: #a5a5a5;
-  --bg-color: whitesmoke;
-  --dark-color: #3e3e3e;
+  --dark-shadow: rgb(165, 165, 165);
+  --light-shadow: rgb(245, 245, 245);
+  --bg-color: rgb(238, 238, 238);
+  --bg-color-contrast: rgb(220, 220, 220);
+  --dark-color: rgb(62, 62, 62);
 }
 
 html {
@@ -27,8 +29,9 @@ body {
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 1440px;
   min-height: 100dvh;
   margin: 0 auto;
