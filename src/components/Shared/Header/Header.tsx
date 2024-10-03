@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -6,34 +7,19 @@ export function Header() {
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
           <li className={styles.nav_item}>
-            <a className={styles.nav_link} href="#contacts">
-              Контакты
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_link} href="#summary">
+            <Link className={styles.nav_link} href="/">
               Обо мне
-            </a>
+            </Link>
           </li>
           <li className={styles.nav_item}>
-            <a className={styles.nav_link} href="#skills">
+            <Link className={styles.nav_link} href="/skills">
               Навыки
-            </a>
+            </Link>
           </li>
           <li className={styles.nav_item}>
-            <a className={styles.nav_link} href="#education">
-              Образование
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_link} href="#languages">
-              Языки
-            </a>
-          </li>
-          <li className={styles.nav_item}>
-            <a className={styles.nav_link} href="#projects">
+            <Link className={styles.nav_link} href="/projects">
               Проекты
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
