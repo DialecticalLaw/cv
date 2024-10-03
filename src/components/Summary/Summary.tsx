@@ -1,8 +1,10 @@
+import { Title } from '../Title/Title';
 import styles from './Summary.module.css';
 
 export function Summary() {
   return (
     <section className={styles.section}>
+      <Title>Обо мне</Title>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio dolores obcaecati voluptate nulla ut
         totam nobis aliquam consequatur ullam officia necessitatibus dolorum a quos atque asperiores nam assumenda error

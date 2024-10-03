@@ -7,11 +7,13 @@ import jsIcon from '@/assets/img/javascript.svg';
 import tsIcon from '@/assets/img/typescript.svg';
 import reactIcon from '@/assets/img/react.svg';
 import nextIcon from '@/assets/img/nextjs.svg';
+import { Title } from '../Title/Title';
 
 export function Skills() {
   return (
     <section>
-      <p>I code with</p>
+      <Title>Навыки</Title>
+
       <ul className={styles.skills_list}>
         <li className={styles.skill}>
           <Image className={styles.icon} src={gitIcon} alt="git" />

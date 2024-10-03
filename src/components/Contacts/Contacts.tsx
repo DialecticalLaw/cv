@@ -4,10 +4,13 @@ import gmailIcon from '@/assets/img/gmail.svg';
 import discordIcon from '@/assets/img/discord.svg';
 import telegramIcon from '@/assets/img/telegram.svg';
 import githubIcon from '@/assets/img/github.svg';
+import { Title } from '../Title/Title';
 
 export function Contacts() {
   return (
     <section className={styles.section}>
+      <Title>Контакты</Title>
+
       <ul className={styles.list}>
         <li className={styles.list_item}>
           <Image className={styles.icon} src={gmailIcon} alt="email" />
