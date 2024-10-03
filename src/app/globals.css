@@ -26,6 +26,16 @@ body {
   background-color: var(--bg-color);
 }
 
+p,
+span,
+a,
+li,
+h1,
+h2 {
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+}
+
 .container {
   position: relative;
   display: flex;
