@@ -14,5 +14,5 @@
 .line {
   width: 5rem;
   height: 0.2rem;
-  background-color: var(--dark-color);
+  background-color: var(--weak-color);
 }

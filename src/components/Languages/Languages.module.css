@@ -13,14 +13,16 @@
 .icon {
   width: 4rem;
   height: 4rem;
+  filter: drop-shadow(0.4rem 0.4rem 0.8rem var(--dark-shadow));
 }
 
 .small_icon {
   width: 3rem;
   height: auto;
+  filter: drop-shadow(0.4rem 0.4rem 0.8rem var(--dark-shadow));
   transition: 0.2s;
 }
 
 .small_icon:hover {
-  transform: scale(0.9);
+  transform: scale(1.1);
 }

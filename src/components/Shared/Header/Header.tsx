@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
+import Image from 'next/image';
+import settingsIcon from '@/assets/img/settings.svg';
 
 export function Header() {
   return (
@@ -23,6 +25,10 @@ export function Header() {
           </li>
         </ul>
       </nav>
+
+      <button className={styles.settings}>
+        <Image className={styles.icon} src={settingsIcon} alt="settings" />
+      </button>
     </header>
   );
 }

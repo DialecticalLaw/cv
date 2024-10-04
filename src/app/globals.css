@@ -15,7 +15,9 @@
   --light-shadow: rgb(255, 255, 255);
   --bg-color: rgb(235, 235, 235);
   --bg-color-contrast: rgb(220, 220, 220);
+  --bg-color-transparent: rgba(170, 170, 170, 0.2);
   --dark-color: rgb(62, 62, 62);
+  --weak-color: rgba(62, 62, 62, 0.4);
 }
 
 html {
@@ -73,7 +75,6 @@ ol {
   width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 75%, #000000 100%);
   animation: drop 6.5s 0s infinite forwards linear;
-  box-shadow: 0 0 1rem 0.1rem var(--dark-shadow);
 }
 
 .line:nth-child(1) {
@@ -81,7 +82,7 @@ ol {
 }
 
 .line:nth-child(1)::after {
-  animation-delay: 3s;
+  animation-delay: 3.5s;
 }
 
 .line:nth-child(3) {
@@ -89,7 +90,7 @@ ol {
 }
 
 .line:nth-child(3)::after {
-  animation-delay: 5s;
+  animation-delay: 5.5s;
 }
 
 @keyframes drop {
