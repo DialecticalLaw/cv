@@ -3,8 +3,8 @@
   backdrop-filter: brightness(92%);
   border-radius: 4rem;
   box-shadow:
-    inset -0.2rem 0.3rem 1rem 0.1rem var(--dark-shadow),
-    inset 0 -0.3rem 1rem 0.1rem var(--light-shadow);
+    0.5rem 0.5rem 1.8rem 0.4rem var(--dark-shadow),
+    -0.5rem -0.5rem 1.8rem 0.4rem var(--light-shadow);
 }
 
 .list {
