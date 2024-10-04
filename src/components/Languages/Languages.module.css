@@ -14,3 +14,13 @@
   width: 4rem;
   height: 4rem;
 }
+
+.small_icon {
+  width: 3rem;
+  height: auto;
+  transition: 0.2s;
+}
+
+.small_icon:hover {
+  transform: scale(0.9);
+}
