@@ -20,7 +20,7 @@ export function Education() {
           <a target="_blank" className={styles.rs_link} href="https://rs.school/">
             RS School Courses
           </a>
-          (pre-school, JS, react)
+          (pre-school | JS | react)
           <a className={styles.link} target="_blank" href="https://app.rs.school/certificate/qplzbdwl">
             <Image className={styles.certificate} src={certificateIcon} alt="certificate" />
           </a>

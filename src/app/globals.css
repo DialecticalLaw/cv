@@ -36,6 +36,11 @@ h2 {
   font-size: 1.8rem;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 .container {
   position: relative;
   display: flex;
