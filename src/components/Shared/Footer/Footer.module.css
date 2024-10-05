@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 2rem 0 4rem 2rem;
   background-image: url('../../../assets/img/ridge.svg');
   background-repeat: no-repeat;
@@ -18,5 +18,5 @@
   margin: 0 auto;
   width: 90%;
   height: 0.1rem;
-  background-color: var(--weak-color);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--dark-color) 50%, rgba(0, 0, 0, 0) 100%);
 }
