@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 1440px;
   margin-top: 4rem;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .contacts_summary {
@@ -14,5 +14,6 @@
   box-shadow:
     0.6rem 0.6rem 1.3rem 0.1rem var(--dark-shadow),
     -0.6rem -0.6rem 1.3rem 0.1rem var(--light-shadow);
+  backdrop-filter: brightness(96%);
   border-radius: 4rem;
 }
