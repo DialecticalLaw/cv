@@ -2,8 +2,9 @@
   display: flex;
   gap: 3rem;
   box-shadow:
-    0.6rem 0.6rem 1.3rem 0.1rem var(--dark-shadow),
-    -0.6rem -0.6rem 1.3rem 0.1rem var(--light-shadow);
+    0.6rem 0.6rem 1rem 0.1rem var(--dark-shadow),
+    inset -0.2rem -0.2rem 0.2rem 0.1rem var(--dark-shadow),
+    inset 0.6rem 0.6rem 1rem 0.1rem var(--light-shadow);
   backdrop-filter: brightness(96%);
   border-radius: 4rem;
 }
