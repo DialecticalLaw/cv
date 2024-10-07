@@ -1,3 +1,7 @@
 export default function Skills() {
-  return <p>Навыки</p>;
+  return (
+    <>
+      <p>Навыки</p>
+    </>
+  );
 }

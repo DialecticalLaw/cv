@@ -1,28 +1,16 @@
-import Link from 'next/link';
 import styles from './Header.module.css';
 import Image from 'next/image';
 import settingsIcon from '@/assets/img/settings.svg';
+import { NavLink } from './NavLink/NavLink';
 
 export function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
-          <li className={styles.nav_item}>
-            <Link className={styles.nav_link} href="/">
-              Обо мне
-            </Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link className={styles.nav_link} href="/skills">
-              Навыки
-            </Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link className={styles.nav_link} href="/projects">
-              Проекты
-            </Link>
-          </li>
+          <NavLink href="/">Обо мне</NavLink>
+          <NavLink href="/skills">Навыки</NavLink>
+          <NavLink href="/projects">Проекты</NavLink>
         </ul>
       </nav>
 
