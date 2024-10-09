@@ -10,8 +10,8 @@ export function Intro() {
 
   return (
     <>
-      <p className={`${styles.title} ${styles.text_name}`}>Денис Шмураткин</p>
-      <h1 className={styles.title}>&lt;Frontend Developer&gt;</h1>
+      <h1 className={`${styles.title} ${styles.text_name}`}>Денис Шмураткин</h1>
+      <h2 className={styles.title}>&lt;Frontend Developer&gt;</h2>
       <div className={styles.intro}>
         <div onClick={() => setActive(true)} className={`${styles.image_wrapper} ${isActive ? styles.active : ''}`}>
           <p className={styles.text_location}>

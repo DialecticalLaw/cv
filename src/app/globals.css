@@ -14,9 +14,10 @@
   --dark-shadow: rgb(165, 165, 165);
   --light-shadow: rgb(255, 255, 255);
   --bg-color: rgb(235, 235, 235);
-  --bg-color-contrast: rgb(220, 220, 220);
+  --bg-color-contrast: rgb(175, 175, 175);
   --bg-color-transparent: rgba(170, 170, 170, 0.2);
   --dark-color: rgb(62, 62, 62);
+  --dark-color-transparent: rgba(62, 62, 62, 0.85);
   --weak-color: rgba(62, 62, 62, 0.4);
 }
 
@@ -36,6 +37,14 @@ h1,
 h2 {
   font-family: var(--main-font);
   font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 ul,

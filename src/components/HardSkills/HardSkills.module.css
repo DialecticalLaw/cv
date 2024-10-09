@@ -1,0 +1,103 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  background-color: var(--dark-color-transparent);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.title {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    'ts ts ts ts css js'
+    'ts ts ts ts css js'
+    'html html react react next jest'
+    'git git react react next vitest'
+    'vite vite webpack redux redux mui';
+  width: 100%;
+  height: 100rem;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  filter: grayscale(100%);
+  transition: 0.2s;
+}
+
+.cell:hover {
+  filter: none;
+  backdrop-filter: brightness(180%);
+}
+
+.ts {
+  grid-area: ts;
+}
+.css {
+  grid-area: css;
+}
+.html {
+  grid-area: html;
+}
+.js {
+  grid-area: js;
+}
+.git {
+  grid-area: git;
+}
+.react {
+  grid-area: react;
+}
+.next {
+  grid-area: next;
+}
+.vite {
+  grid-area: vite;
+}
+.webpack {
+  grid-area: webpack;
+}
+.redux {
+  grid-area: redux;
+}
+.jest {
+  grid-area: jest;
+}
+.vitest {
+  grid-area: vitest;
+}
+.mui {
+  grid-area: mui;
+}
+
+.icon {
+  width: 70%;
+  height: 70%;
+}
+
+.caption {
+  opacity: 0;
+  font-weight: bold;
+  transition: 0.12s;
+  transform: translateY(-100%);
+}
+
+.cell:hover .caption {
+  opacity: 1;
+  transform: none;
+  color: #ffffff;
+}

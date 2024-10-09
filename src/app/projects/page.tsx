@@ -1,3 +1,3 @@
 export default function Projects() {
-  return <p>Проекты</p>;
+  return <h1>Проекты</h1>;
 }
