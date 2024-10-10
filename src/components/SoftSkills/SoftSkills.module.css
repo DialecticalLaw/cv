@@ -1,0 +1,66 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 100%;
+  width: 100%;
+  height: 80rem;
+  padding-bottom: 10rem;
+}
+
+.bulb {
+  grid-column-start: 2;
+  grid-row: 2 / 4;
+  filter: drop-shadow(0 -7rem 9rem yellow);
+}
+
+.skill {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+.communication {
+  justify-self: center;
+  grid-column-start: 2;
+}
+
+.mentoring {
+  justify-self: end;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.problem_solving {
+  justify-self: end;
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.ambiguity {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.introspection {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}

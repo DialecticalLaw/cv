@@ -39,7 +39,7 @@
   gap: 0.5rem;
   min-width: 1rem;
   min-height: 1rem;
-  filter: grayscale(100%);
+  filter: grayscale(100%) brightness(72%);
   transition: 0.2s;
 }
 
