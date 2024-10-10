@@ -18,7 +18,7 @@ import { Title } from '../Title/Title';
 export function HardSkills() {
   return (
     <section className={styles.section}>
-      <Title>Hard Skills</Title>
+      <Title classes={[styles.title]}>Hard Skills</Title>
       <div className={styles.grid}>
         <div className={`${styles.cell} ${styles.ts}`}>
           <Image className={styles.icon} src={TSIcon} alt="ts" />
