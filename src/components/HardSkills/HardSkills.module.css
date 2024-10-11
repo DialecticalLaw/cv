@@ -45,7 +45,7 @@
 
 .cell:hover {
   filter: none;
-  backdrop-filter: brightness(180%) invert(100%);
+  backdrop-filter: brightness(180%);
 }
 
 .ts {

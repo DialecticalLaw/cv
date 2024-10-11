@@ -13,6 +13,7 @@ export function SoftSkills() {
     <section className={styles.section}>
       <Title>Soft Skills</Title>
       <div className={styles.wrapper}>
+        <div className={styles.template} />
         <Image className={styles.bulb} src={bulbIcon} alt="bulb" />
 
         <div className={`${styles.skill} ${styles.communication}`}>
