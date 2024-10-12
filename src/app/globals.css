@@ -101,7 +101,7 @@ ol {
 }
 
 .line:nth-child(1)::after {
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 
 .line:nth-child(3) {
@@ -109,7 +109,7 @@ ol {
 }
 
 .line:nth-child(3)::after {
-  animation-delay: 5.5s;
+  animation-delay: 4.5s;
 }
 
 @keyframes drop {
