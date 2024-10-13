@@ -4,6 +4,20 @@
   gap: 3rem;
 }
 
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 40%;
+  will-change: transform;
+  transition: 0.3s opacity;
+}
+
+.hidden_video {
+  opacity: 0;
+}
+
 .project {
   display: grid;
   grid-template: 1fr 1fr / 70% 30%;
