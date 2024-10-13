@@ -62,7 +62,7 @@ export const projects: ProjectInfo[] = [
   },
   {
     title: 'CV',
-    desc: 'Портфолио. Вы уже на нём :)',
+    desc: 'Портфолио. Вы уже в нём :)',
     link: null,
   },
 ];

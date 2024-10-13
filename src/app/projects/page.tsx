@@ -6,6 +6,7 @@ import { projects } from '@/helpers/projects';
 import { Project } from '@/components/Project/Project';
 
 const VIDEO_HEIGHT_PERCENTAGE = 45;
+const RIGHT_SHIFT = 60;
 
 export default function Projects() {
   const [videos, setVideos] = useState<string[]>([]);
@@ -15,11 +16,14 @@ export default function Projects() {
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
-      const halfVideoHeight = window.innerHeight * (VIDEO_HEIGHT_PERCENTAGE / 100);
-      const x = e.clientX + 60;
-      const y = e.clientY - halfVideoHeight / 2;
+      const videoHeight = window.innerHeight * (VIDEO_HEIGHT_PERCENTAGE / 100);
+      const x = e.clientX + RIGHT_SHIFT;
+      let y = e.clientY - videoHeight / 2;
+      if (y < 0) y = 0;
+      if (y + videoHeight > window.innerHeight) y = window.innerHeight - videoHeight;
+
       setX(x);
-      setY(y >= 0 ? y : 0);
+      setY(y);
     };
     document.addEventListener('pointermove', updateCoords);
     return () => document.removeEventListener('pointermove', updateCoords);
