@@ -1,16 +1,17 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 import { projects } from '@/helpers/projects';
+import { Project } from '@/components/Project/Project';
 
 const VIDEO_HEIGHT_PERCENTAGE = 45;
 
 export default function Projects() {
-  const [src, setSrc] = useState('');
+  const [videos, setVideos] = useState<string[]>([]);
+  const [activeVideo, setActiveVideo] = useState('');
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
@@ -29,33 +30,39 @@ export default function Projects() {
       <h1>Проекты</h1>
       <div className={styles.wrapper}>
         {projects.map((project) => (
-          <div
-            onPointerEnter={() => setSrc(project.link)}
-            onPointerLeave={() => setSrc('')}
-            className={styles.project}
+          <Project
+            videos={videos}
+            setVideos={setVideos}
+            setActiveVideo={setActiveVideo}
             key={project.title}
-          >
-            <p className={styles.title}>{project.title}</p>
-            <p className={styles.desc}>{project.desc}</p>
-            <p className={styles.hint}>Подробнее &rarr;</p>
-          </div>
+            desc={project.desc}
+            link={project.link}
+            title={project.title}
+          />
         ))}
       </div>
 
-      <video
-        ref={videoRef}
-        preload="none"
-        poster={src ? '/loader.gif' : ''}
-        style={{ transform: `translate(${x}px, ${y}px)` }}
-        className={`${styles.video} ${src ? '' : styles.hidden_video}`}
-        src={src}
-        controls={false}
-        loop
-        autoPlay
-        muted
-      >
-        Ваш браузер не поддерживает видео
-      </video>
+      <div className={styles.video_position_wrapper} style={{ transform: `translate(${x}px, ${y}px)` }}>
+        <div className={styles.video_wrapper}>
+          {videos.map((src) => {
+            return (
+              <video
+                className={`${styles.video} ${activeVideo === src ? '' : styles.hidden_video}`}
+                poster={'/loader.gif'}
+                src={src}
+                preload="none"
+                key={src}
+                controls={false}
+                loop
+                autoPlay
+                muted
+              >
+                Ваш браузер не поддерживает видео
+              </video>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 }

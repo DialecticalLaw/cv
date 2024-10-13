@@ -1,4 +1,10 @@
-export const projects = [
+export interface ProjectInfo {
+  title: string;
+  desc: string;
+  link: string | null;
+}
+
+export const projects: ProjectInfo[] = [
   {
     title: 'Library',
     desc: 'Landing библиотеки',
@@ -57,6 +63,6 @@ export const projects = [
   {
     title: 'CV',
     desc: 'Портфолио. Вы уже на нём :)',
-    link: '',
+    link: null,
   },
 ];
