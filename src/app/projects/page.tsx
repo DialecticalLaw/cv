@@ -53,26 +53,24 @@ export default function Projects() {
         {selectedProject && <Details selectedProject={selectedProject} />}
       </div>
 
-      <div className={styles.video_position_wrapper} style={{ transform: `translate(${x}px, ${y}px)` }}>
-        <div className={styles.video_wrapper}>
-          {videos.map((src) => {
-            return (
-              <video
-                className={`${styles.video} ${activeVideo === src ? '' : styles.hidden_video}`}
-                poster={'/loader.gif'}
-                src={src}
-                preload="none"
-                key={src}
-                controls={false}
-                loop
-                autoPlay
-                muted
-              >
-                Ваш браузер не поддерживает видео
-              </video>
-            );
-          })}
-        </div>
+      <div className={styles.video_wrapper} style={{ transform: `translate(${x}px, ${y}px)` }}>
+        {videos.map((src) => {
+          return (
+            <video
+              className={`${styles.video} ${activeVideo === src ? '' : styles.hidden_video}`}
+              poster={'/loader.gif'}
+              src={src}
+              preload="none"
+              key={src}
+              controls={false}
+              loop
+              autoPlay
+              muted
+            >
+              Ваш браузер не поддерживает видео
+            </video>
+          );
+        })}
       </div>
     </section>
   );
