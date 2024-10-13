@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 import { projects } from '@/helpers/projects';
 import { Project } from '@/components/Project/Project';
+import { useSearchParams } from 'next/navigation';
+import { Details } from '@/components/Project/Details/Details';
 
 const VIDEO_HEIGHT_PERCENTAGE = 45;
 const RIGHT_SHIFT = 60;
@@ -13,6 +15,8 @@ export default function Projects() {
   const [activeVideo, setActiveVideo] = useState('');
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
+  const searchParams = useSearchParams();
+  const selectedProject = decodeURIComponent(searchParams.get('project') || '');
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
@@ -33,17 +37,20 @@ export default function Projects() {
     <section>
       <h1>Проекты</h1>
       <div className={styles.wrapper}>
-        {projects.map((project) => (
-          <Project
-            videos={videos}
-            setVideos={setVideos}
-            setActiveVideo={setActiveVideo}
-            key={project.title}
-            desc={project.desc}
-            link={project.link}
-            title={project.title}
-          />
-        ))}
+        <div className={styles.projects_list}>
+          {projects.map((project) => (
+            <Project
+              videos={videos}
+              setVideos={setVideos}
+              setActiveVideo={setActiveVideo}
+              key={project.title}
+              desc={project.desc}
+              link={project.link}
+              title={project.title}
+            />
+          ))}
+        </div>
+        {selectedProject && <Details selectedProject={selectedProject} />}
       </div>
 
       <div className={styles.video_position_wrapper} style={{ transform: `translate(${x}px, ${y}px)` }}>

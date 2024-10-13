@@ -2,7 +2,7 @@
   display: grid;
   grid-template: 1fr 1fr / 70% 30%;
   gap: 1rem 2rem;
-  width: 40%;
+  width: 100%;
   padding: 1rem;
   outline: 0.1rem solid transparent;
   transition: 0.2s;

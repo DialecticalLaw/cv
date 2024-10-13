@@ -1,0 +1,44 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 40vw;
+  height: 55dvh;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow:
+    0.6rem 0.6rem 1rem 0.1rem var(--dark-shadow),
+    inset -0.2rem -0.2rem 0.2rem 0.1rem var(--dark-shadow),
+    inset 0.6rem 0.6rem 1rem 0.1rem var(--light-shadow);
+  backdrop-filter: brightness(96%);
+}
+
+.close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: none;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.close:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 1rem 0.1rem var(--dark-shadow));
+}

@@ -1,7 +1,16 @@
 .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.projects_list {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 40%;
 }
 
 .video_position_wrapper {
@@ -24,14 +33,10 @@
   left: 0;
   height: 100%;
   border-radius: 1.5rem;
-  /* transition: 0.15s; */
   animation: appear 0.15s forwards;
 }
 
 .hidden_video {
-  /* visibility: hidden;
-  transform: scale(0.85);
-  opacity: 0; */
   animation: disappear 0.15s forwards;
 }
 
