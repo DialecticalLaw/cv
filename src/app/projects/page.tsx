@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './page.module.css';
 import { projects } from '@/helpers/projects';
 
-const VIDEO_HEIGHT_PERCENTAGE = 40;
+const VIDEO_HEIGHT_PERCENTAGE = 45;
 
 export default function Projects() {
   const [src, setSrc] = useState('');
@@ -15,7 +15,6 @@ export default function Projects() {
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
       const halfVideoHeight = window.innerHeight * (VIDEO_HEIGHT_PERCENTAGE / 100);
-      console.log(halfVideoHeight);
       const x = e.clientX + 60;
       const y = e.clientY - halfVideoHeight / 2;
       setX(x);

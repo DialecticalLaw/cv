@@ -9,8 +9,9 @@
   top: 0;
   left: 0;
   width: auto;
-  height: 40%;
+  height: 45%;
   will-change: transform;
+  border-radius: 1.5rem;
   transition: 0.3s opacity;
 }
 
