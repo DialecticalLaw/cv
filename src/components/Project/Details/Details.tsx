@@ -3,6 +3,7 @@ import styles from './Details.module.css';
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import closeIcon from '@/assets/img/close.svg';
+import externalIcon from '@/assets/img/external.svg';
 
 export function Details({ selectedProject }: { selectedProject: string }) {
   const router = useRouter();
@@ -17,17 +18,17 @@ export function Details({ selectedProject }: { selectedProject: string }) {
       </button>
 
       <div className={styles.background} style={{ backgroundImage: `url('${data.imageLink}')` }} />
-      <div className={styles.info_wrapper}>
-        <h3 className={styles.text}>{data.title}</h3>
+      <div className={`${styles.info_wrapper} scrollbar`}>
+        <h3 className={styles.title}>{data.title}</h3>
         <p className={styles.text}>{data.fullDesc}</p>
         <div className={styles.links_wrapper}>
           {data.serverLink && (
-            <a className={styles.link} href={data.serverLink}>
-              Сервер
+            <a target="_blank" className={`${styles.link} ${styles.server_link}`} href={data.serverLink}>
+              Сервер <Image src={externalIcon} className={styles.small_icon} alt="external" />
             </a>
           )}
-          <a className={styles.link} href={data.deployLink}>
-            Посмотреть
+          <a target="_blank" className={`${styles.link} ${styles.view_link}`} href={data.deployLink}>
+            Посмотреть <Image src={externalIcon} className={styles.small_icon} alt="external" />
           </a>
         </div>
       </div>
