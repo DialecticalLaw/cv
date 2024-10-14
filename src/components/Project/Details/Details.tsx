@@ -14,7 +14,7 @@ export const Details = memo(function Details({ selectedProject }: { selectedProj
 
   return (
     <div className={styles.wrapper}>
-      <button className={styles.close} onClick={() => router.push(pathname)}>
+      <button className={styles.close} onClick={() => router.push(pathname, { scroll: false })}>
         <Image className={styles.icon} src={closeIcon} alt="close" />
       </button>
 

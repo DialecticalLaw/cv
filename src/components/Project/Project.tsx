@@ -22,7 +22,7 @@ export const Project = memo(function Project({
 
   return (
     <div
-      onClick={() => router.replace(`${pathname}?project=${encodeURIComponent(title)}`)}
+      onClick={() => router.replace(`${pathname}?project=${encodeURIComponent(title)}`, {scroll: false})}
       onPointerEnter={() => {
         if (!videoLink) return;
         if (!videos.includes(videoLink)) setVideos((prev) => [...prev, videoLink]);
