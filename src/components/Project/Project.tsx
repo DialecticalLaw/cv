@@ -3,8 +3,9 @@
 import { ProjectInfo } from '@/helpers/projects';
 import styles from './Project.module.css';
 import { usePathname, useRouter } from 'next/navigation';
+import { memo } from 'react';
 
-export function Project({
+export const Project = memo(function Project({
   shortDesc,
   videoLink,
   title,
@@ -36,4 +37,4 @@ export function Project({
       <p className={styles.hint}>Подробнее &rarr;</p>
     </div>
   );
-}
+});

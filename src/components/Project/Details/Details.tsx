@@ -4,8 +4,9 @@ import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import closeIcon from '@/assets/img/close.svg';
 import externalIcon from '@/assets/img/external.svg';
+import { memo } from 'react';
 
-export function Details({ selectedProject }: { selectedProject: string }) {
+export const Details = memo(function Details({ selectedProject }: { selectedProject: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const data = projects.find(({ title }) => title === selectedProject);
@@ -34,4 +35,4 @@ export function Details({ selectedProject }: { selectedProject: string }) {
       </div>
     </div>
   );
-}
+});
