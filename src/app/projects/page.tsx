@@ -8,7 +8,7 @@ import { useSearchParams } from 'next/navigation';
 import { Details } from '@/components/Project/Details/Details';
 
 const VIDEO_HEIGHT_PERCENTAGE = 45;
-const RIGHT_SHIFT = 60;
+const RIGHT_SHIFT = 90;
 
 export default function Projects() {
   const [videos, setVideos] = useState<string[]>([]);
@@ -44,8 +44,8 @@ export default function Projects() {
               setVideos={setVideos}
               setActiveVideo={setActiveVideo}
               key={project.title}
-              desc={project.desc}
-              link={project.link}
+              shortDesc={project.shortDesc}
+              videoLink={project.videoLink}
               title={project.title}
             />
           ))}

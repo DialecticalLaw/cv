@@ -5,13 +5,13 @@ import styles from './Project.module.css';
 import { usePathname, useRouter } from 'next/navigation';
 
 export function Project({
-  desc,
-  link,
+  shortDesc,
+  videoLink,
   title,
   setVideos,
   setActiveVideo,
   videos,
-}: ProjectInfo & {
+}: Pick<ProjectInfo, 'shortDesc' | 'videoLink' | 'title'> & {
   setVideos: React.Dispatch<React.SetStateAction<string[]>>;
   setActiveVideo: React.Dispatch<React.SetStateAction<string>>;
   videos: string[];
@@ -23,16 +23,16 @@ export function Project({
     <div
       onClick={() => router.replace(`${pathname}?project=${encodeURIComponent(title)}`)}
       onPointerEnter={() => {
-        if (!link) return;
-        if (!videos.includes(link)) setVideos((prev) => [...prev, link]);
-        setActiveVideo(link);
+        if (!videoLink) return;
+        if (!videos.includes(videoLink)) setVideos((prev) => [...prev, videoLink]);
+        setActiveVideo(videoLink);
       }}
       onPointerLeave={() => setActiveVideo('')}
       className={styles.project}
       key={title}
     >
       <p className={styles.title}>{title}</p>
-      <p className={styles.desc}>{desc}</p>
+      <p className={styles.desc}>{shortDesc}</p>
       <p className={styles.hint}>Подробнее &rarr;</p>
     </div>
   );

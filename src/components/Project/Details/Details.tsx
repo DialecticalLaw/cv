@@ -12,10 +12,25 @@ export function Details({ selectedProject }: { selectedProject: string }) {
 
   return (
     <div className={styles.wrapper}>
-      <h3>{data.title}</h3>
       <button className={styles.close} onClick={() => router.push(pathname)}>
         <Image className={styles.icon} src={closeIcon} alt="close" />
       </button>
+
+      <div className={styles.background} style={{ backgroundImage: `url('${data.imageLink}')` }} />
+      <div className={styles.info_wrapper}>
+        <h3 className={styles.text}>{data.title}</h3>
+        <p className={styles.text}>{data.fullDesc}</p>
+        <div className={styles.links_wrapper}>
+          {data.serverLink && (
+            <a className={styles.link} href={data.serverLink}>
+              Сервер
+            </a>
+          )}
+          <a className={styles.link} href={data.deployLink}>
+            Посмотреть
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

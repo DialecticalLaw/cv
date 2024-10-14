@@ -1,7 +1,6 @@
 .wrapper {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 20dvh;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -9,8 +8,7 @@
   align-items: center;
   gap: 1.5rem;
   width: 40vw;
-  height: 55dvh;
-  margin: auto;
+  height: 65dvh;
   padding: 2rem;
   border-radius: 2rem;
   box-shadow:
@@ -18,9 +16,11 @@
     inset -0.2rem -0.2rem 0.2rem 0.1rem var(--dark-shadow),
     inset 0.6rem 0.6rem 1rem 0.1rem var(--light-shadow);
   backdrop-filter: brightness(96%);
+  animation: appear 0.5s forwards;
 }
 
 .close {
+  z-index: 1;
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -38,7 +38,49 @@
   height: 100%;
 }
 
+.wrapper:hover .close {
+  filter: none;
+}
+
 .close:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 1rem 0.1rem var(--dark-shadow));
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.info_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.text {
+  text-align: left;
+}
+
+.links_wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes appear {
+  from {
+    transform: scaleY(0) translateX(100%);
+  }
+  to {
+    transform: scaleY(1) translateX(0);
+  }
 }

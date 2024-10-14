@@ -15,7 +15,7 @@ export function Header() {
       </nav>
 
       <button className={styles.settings}>
-        <Image className={styles.icon} src={settingsIcon} alt="settings" />
+        <Image priority className={styles.icon} src={settingsIcon} alt="settings" />
       </button>
     </header>
   );
