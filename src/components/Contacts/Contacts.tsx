@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Contacts.module.css';
 import gmailIcon from '@/assets/img/gmail.svg';
 import discordIcon from '@/assets/img/discord.svg';
@@ -9,19 +7,6 @@ import { Title } from '../Title/Title';
 import { Contact } from './Contact/Contact';
 
 export function Contacts() {
-  // const [copiedText, setCopiedText] = useState<Contact>();
-
-  // const copy = async (e: React.MouseEvent<HTMLLIElement, MouseEvent>, type: Contact) => {
-  //   if (!(e.target instanceof HTMLElement)) return;
-  //   try {
-  //     await navigator.clipboard.writeText(e.target.textContent as string);
-  //     setCopiedText(type);
-  //     setTimeout(() => setCopiedText(undefined), 2000);
-  //   } catch (err) {
-  //     console.error('Failed to copy: ', err);
-  //   }
-  // };
-
   return (
     <section className={styles.section}>
       <Title>Контакты</Title>
