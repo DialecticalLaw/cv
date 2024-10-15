@@ -11,13 +11,19 @@ import { Sort } from '@/components/Sort/Sort';
 const VIDEO_HEIGHT_PERCENTAGE = 45;
 const RIGHT_SHIFT = 90;
 
+function getDefaultOrder(orderFromSP: string | null): 'asc' | 'desc' {
+  if (orderFromSP === 'asc' || orderFromSP === 'desc') return orderFromSP;
+  return 'desc';
+}
+
 export default function Projects() {
   const [videos, setVideos] = useState<string[]>([]);
   const [activeVideo, setActiveVideo] = useState('');
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const searchParams = useSearchParams();
-  const selectedProject = decodeURIComponent(searchParams.get('project') || '');
+  const selectedProject = decodeURIComponent(searchParams.get('details') || '');
+  const [order, setOrder] = useState<'asc' | 'desc'>(getDefaultOrder(searchParams.get('order')));
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
@@ -34,13 +40,19 @@ export default function Projects() {
     return () => document.removeEventListener('pointermove', updateCoords);
   }, []);
 
+  const sortedProjects = projects.sort((a, b) => {
+    const dateA = new Date(a.date).valueOf();
+    const dateB = new Date(b.date).valueOf();
+    return order === 'asc' ? dateA - dateB : dateB - dateA;
+  });
+
   return (
     <section>
       <h1>Проекты</h1>
-      <Sort />
       <div className={styles.wrapper}>
+        <Sort order={order} setOrder={setOrder} />
         <div className={styles.projects_list}>
-          {projects.map((project) => (
+          {sortedProjects.map((project) => (
             <Project
               videos={videos}
               setVideos={setVideos}
