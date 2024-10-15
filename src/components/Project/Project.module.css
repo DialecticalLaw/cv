@@ -22,21 +22,13 @@
   grid-row-start: 2;
 }
 
-.hint {
+.date {
   grid-column-start: 2;
   grid-row: 1 / 3;
   align-self: center;
-  opacity: 0;
-  transform: translateX(-1.5rem);
-  transition: 0.2s;
 }
 
 .project:hover {
   transition: none;
   outline-color: var(--weak-color);
-}
-
-.project:hover .hint {
-  opacity: 1;
-  transform: none;
 }

@@ -6,6 +6,7 @@ import { projects } from '@/helpers/projects';
 import { Project } from '@/components/Project/Project';
 import { useSearchParams } from 'next/navigation';
 import { Details } from '@/components/Project/Details/Details';
+import { Sort } from '@/components/Sort/Sort';
 
 const VIDEO_HEIGHT_PERCENTAGE = 45;
 const RIGHT_SHIFT = 90;
@@ -36,6 +37,7 @@ export default function Projects() {
   return (
     <section>
       <h1>Проекты</h1>
+      <Sort />
       <div className={styles.wrapper}>
         <div className={styles.projects_list}>
           {projects.map((project) => (
@@ -44,9 +46,7 @@ export default function Projects() {
               setVideos={setVideos}
               setActiveVideo={setActiveVideo}
               key={project.title}
-              shortDesc={project.shortDesc}
-              videoLink={project.videoLink}
-              title={project.title}
+              projectInfo={project}
             />
           ))}
         </div>
