@@ -21,17 +21,19 @@
 
 .grid {
   display: grid;
+  grid-template: repeat(5, 1fr) / repeat(6, 1fr);
   grid-template-areas:
-    'ts ts ts ts css js'
-    'ts ts ts ts css js'
+    'ts ts ts css css js'
+    'ts ts ts css css js'
     'html html react react next jest'
     'git git react react next vitest'
     'vite vite webpack redux redux mui';
   width: 100%;
-  height: 100rem;
+  height: 90rem;
 }
 
 .cell {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +41,7 @@
   gap: 0.5rem;
   min-width: 1rem;
   min-height: 1rem;
-  filter: grayscale(100%) brightness(72%);
+  filter: grayscale(100%) opacity(60%);
   transition: 0.2s;
 }
 
@@ -89,8 +91,8 @@
 }
 
 .icon {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 }
 
 .caption {
