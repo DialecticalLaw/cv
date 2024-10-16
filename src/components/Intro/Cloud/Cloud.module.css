@@ -1,0 +1,9 @@
+.cloud {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  will-change: transform;
+}

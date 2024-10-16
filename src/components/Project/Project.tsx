@@ -24,7 +24,6 @@ export const Project = memo(function Project({
   const openDetails = () => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
     newSearchParams.set('details', encodeURIComponent(title));
-    console.log('open');
     router.replace(`${pathname}?${newSearchParams.toString()}`, { scroll: false });
   };
 

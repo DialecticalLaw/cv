@@ -20,12 +20,14 @@
 }
 
 .settings {
+  user-select: none;
   padding: 1rem;
   box-shadow:
     0.6rem 0.6rem 1.3rem 0.1rem var(--dark-shadow),
     inset 0 0 0.5rem 0 var(--dark-shadow);
   border: none;
   border-radius: 50%;
+  background-color: var(--bg-color);
   transition: 0.2s;
   cursor: pointer;
 }
