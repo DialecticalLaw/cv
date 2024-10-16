@@ -46,7 +46,9 @@ html::-webkit-scrollbar-thumb,
 }
 
 body {
+  opacity: 0;
   background-color: var(--bg-color);
+  animation: appear 1s forwards;
 }
 
 p,
@@ -145,5 +147,11 @@ ol {
   }
   to {
     top: 100%;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
   }
 }
