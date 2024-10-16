@@ -1,7 +1,6 @@
 import styles from './Header.module.css';
-import Image from 'next/image';
-import settingsIcon from '@/assets/img/settings.svg';
 import { NavLink } from './NavLink/NavLink';
+import { Settings } from './Settings/Settings';
 
 export function Header() {
   return (
@@ -14,9 +13,7 @@ export function Header() {
         </ul>
       </nav>
 
-      <button className={styles.settings}>
-        <Image priority className={styles.icon} src={settingsIcon} alt="settings" />
-      </button>
+      <Settings />
     </header>
   );
 }
