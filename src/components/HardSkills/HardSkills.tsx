@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './HardSkills.module.css';
 import { Title } from '../Title/Title';
-import { hardSkills } from '@/helpers/hardSkills';
+import { hardSkills } from '@/helpers/skills';
 
 export function HardSkills() {
   return (
