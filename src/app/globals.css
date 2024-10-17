@@ -47,8 +47,8 @@ html::-webkit-scrollbar-thumb,
 
 body {
   opacity: 0;
-  background-color: var(--bg-color);
   animation: appear 1s forwards;
+  background-color: var(--bg-color);
 }
 
 p,
@@ -101,6 +101,11 @@ ol {
   max-width: 1440px;
   margin-top: 4rem;
   padding: 0 2rem 2rem 2rem;
+}
+
+.main > * {
+  opacity: 0;
+  animation: appear 1s forwards;
 }
 
 .line {

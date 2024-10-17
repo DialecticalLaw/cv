@@ -10,7 +10,7 @@
   border-radius: 1rem;
   transform: translateY(-50%);
   transform-origin: top;
-  animation: appear 0.3s calc(var(--index) * 0.1s) forwards;
+  animation: appear 0.3s calc(var(--index) * 0.06s) forwards;
   cursor: pointer;
 }
 
