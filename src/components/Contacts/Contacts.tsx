@@ -5,11 +5,14 @@ import telegramIcon from '@/assets/img/telegram.svg';
 import githubIcon from '@/assets/img/github.svg';
 import { Title } from '../Title/Title';
 import { Contact } from './Contact/Contact';
+import { useTranslations } from 'next-intl';
 
 export function Contacts() {
+  const t = useTranslations('HomePage');
+
   return (
     <section className={styles.section}>
-      <Title>Контакты</Title>
+      <Title>{t('contacts')}</Title>
 
       <ul className={styles.list}>
         <Contact src={gmailIcon} alt="email">

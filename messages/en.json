@@ -1,5 +1,16 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "name": "Denis Shmuratkin",
+    "location": "Location: Russia, Syktyvkar",
+    "contacts": "Contacts",
+    "summary": "Summary",
+    "summaryText": "A frontend developer who strives to find a balance between functionality and aesthetics by creating intuitive and inspiring user interfaces.",
+    "education": "Education",
+    "college": "Syktyvkar Trade and Economic College",
+    "courses": "RS School Courses",
+    "languages": "Languages",
+    "ruLang": "Russia",
+    "ruLangLevel": "native",
+    "enLang": "English"
   }
 }

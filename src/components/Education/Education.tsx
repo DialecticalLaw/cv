@@ -3,22 +3,25 @@ import { Title } from '../Title/Title';
 import styles from './Education.module.css';
 import educationIcon from '@/assets/img/education.svg';
 import certificateIcon from '@/assets/img/certificate.svg';
+import { useTranslations } from 'next-intl';
 
 export function Education() {
+  const t = useTranslations('HomePage');
+
   return (
     <section>
-      <Title>Образование</Title>
+      <Title>{t('education')}</Title>
 
       <ul className={styles.list}>
         <li className={styles.item}>
           <Image className={styles.icon} src={educationIcon} alt="education" />
-          Syktyvkar Trade and Economic College
+          {t('college')}
         </li>
 
         <li className={styles.item}>
           <Image className={styles.icon} src={educationIcon} alt="education" />
           <a target="_blank" className={styles.rs_link} href="https://rs.school/">
-            RS School Courses
+            {t('courses')}
           </a>
           (pre-school | JS | react)
           <a className={styles.link} target="_blank" href="https://app.rs.school/certificate/qplzbdwl">

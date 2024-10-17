@@ -4,19 +4,22 @@ import styles from './Languages.module.css';
 import russiaIcon from '@/assets/img/flag-ru.svg';
 import englandIcon from '@/assets/img/flag-gb.svg';
 import certificateIcon from '@/assets/img/certificate.svg';
+import { useTranslations } from 'next-intl';
 
 export function Languages() {
+  const t = useTranslations('HomePage');
+
   return (
     <section>
-      <Title>Языки</Title>
+      <Title>{t('languages')}</Title>
       <ul className={styles.list}>
         <li className={styles.item}>
           <Image className={styles.icon} src={russiaIcon} alt="russia" />
-          <b>Русский</b> - родной
+          <b>{t('ruLang')}</b> - {t('ruLangLevel')}
         </li>
         <li className={styles.item}>
           <Image className={styles.icon} src={englandIcon} alt="england" />
-          <b>Английский</b> - B1{' '}
+          <b>{t('enLang')}</b> - B1{' '}
           <a target="_blank" href="https://cert.efset.org/ru/SgsuKd">
             <Image className={styles.small_icon} src={certificateIcon} alt="certificate" />
           </a>

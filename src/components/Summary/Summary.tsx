@@ -1,14 +1,14 @@
+import { useTranslations } from 'next-intl';
 import { Title } from '../Title/Title';
 import styles from './Summary.module.css';
 
 export function Summary() {
+  const t = useTranslations('HomePage');
+
   return (
     <section className={styles.section}>
-      <Title>Обо мне</Title>
-      <p>
-        Фронтенд-разработчик, стремящийся найти баланс между функциональностью и эстетикой, создавая интуитивно понятные
-        и вдохновляющие пользовательские интерфейсы.
-      </p>
+      <Title>{t('summary')}</Title>
+      <p>{t('summaryText')}</p>
     </section>
   );
 }
