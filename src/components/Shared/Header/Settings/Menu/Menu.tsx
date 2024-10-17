@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import styles from './Menu.module.css';
-import { LanguageSwitch } from './LanguageSwitch/LanguageSwitch';
+import { LocaleSwitch } from './LocaleSwitch/LocaleSwitch';
 import { ThemeSwitch } from './ThemeSwitch/ThemeSwitch';
 
 export function Menu({ isOpen, setOpen }: { isOpen: boolean; setOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
@@ -19,7 +19,7 @@ export function Menu({ isOpen, setOpen }: { isOpen: boolean; setOpen: React.Disp
 
   return (
     <div ref={menuRef} className={`${styles.wrapper} ${isOpen ? styles.visible : ''}`}>
-      <LanguageSwitch />
+      <LocaleSwitch />
       <ThemeSwitch />
     </div>
   );
