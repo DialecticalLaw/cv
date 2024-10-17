@@ -1,0 +1,9 @@
+.select {
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.option {
+  background-color: var(--bg-color);
+}
