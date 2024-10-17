@@ -17,5 +17,14 @@
     "ruLang": "Русский",
     "ruLangLevel": "родной",
     "enLang": "Английский"
+  },
+  "SkillsPage": {
+    "hardSkills": "Жесткие навыки",
+    "softSkills": "Мягкие навыки",
+    "communication": "Коммуникация",
+    "mentoring": "Наставничество",
+    "problem": "Решение проблем",
+    "ambiguity": "Работа в режиме неопределенности",
+    "introspection": "Самоанализ"
   }
 }

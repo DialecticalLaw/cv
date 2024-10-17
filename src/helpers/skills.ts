@@ -53,25 +53,4 @@ export const hardSkills = [
   },
 ];
 
-export const softSkills = [
-  {
-    name: 'Коммуникация',
-    abbr: 'communication',
-  },
-  {
-    name: 'Наставничество',
-    abbr: 'mentoring',
-  },
-  {
-    name: 'Решение проблем',
-    abbr: 'problem_solving',
-  },
-  {
-    name: 'Работа в режиме неопределенности',
-    abbr: 'ambiguity',
-  },
-  {
-    name: 'Самоанализ',
-    abbr: 'introspection',
-  },
-];
+export const softSkills = ['communication', 'mentoring', 'problem', 'ambiguity', 'introspection'];

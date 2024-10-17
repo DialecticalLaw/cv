@@ -17,5 +17,14 @@
     "ruLang": "Russia",
     "ruLangLevel": "native",
     "enLang": "English"
+  },
+  "SkillsPage": {
+    "hardSkills": "Hard skills",
+    "softSkills": "Soft skills",
+    "communication": "Communication",
+    "mentoring": "Mentoring",
+    "problem": "Problem solving",
+    "ambiguity": "Working in ambiguity mode",
+    "introspection": "Introspection"
   }
 }
