@@ -1,14 +1,29 @@
 .wrapper {
+  z-index: -1;
   position: absolute;
-  top: 125%;
+  top: 100%;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   width: 25rem;
   padding: 1.5rem;
-  background-color: var(--light-shadow);
+  background-color: var(--bg-color);
   border-radius: 1rem;
+  transform-origin: top;
+  transform: scale(0) translateY(-50%);
+  box-shadow:
+    0.4rem 0.4rem 1rem 0.1rem var(--dark-shadow),
+    inset -0.2rem -0.2rem 0.2rem 0.1rem var(--dark-shadow),
+    inset 0.4rem 0.4rem 1rem 0.1rem var(--light-shadow);
+  transition: 0.2s;
+}
+
+.visible {
+  z-index: 1;
+  transform: scale(1) translateY(10%);
+  opacity: 1;
 }
 
 .theme_wrapper {
