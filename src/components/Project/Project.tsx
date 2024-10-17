@@ -10,11 +10,13 @@ export const Project = memo(function Project({
   setVideos,
   setActiveVideo,
   videos,
+  index,
 }: {
   projectInfo: ProjectInfo;
   setVideos: React.Dispatch<React.SetStateAction<string[]>>;
   setActiveVideo: React.Dispatch<React.SetStateAction<string>>;
   videos: string[];
+  index: number;
 }) {
   const { videoLink, title, shortDesc, date } = projectInfo;
   const router = useRouter();
@@ -29,6 +31,7 @@ export const Project = memo(function Project({
 
   return (
     <div
+      style={{ '--index': index } as React.CSSProperties}
       onClick={openDetails}
       onPointerEnter={() => {
         if (!videoLink) return;

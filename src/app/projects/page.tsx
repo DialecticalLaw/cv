@@ -52,8 +52,9 @@ export default function Projects() {
       <div className={styles.wrapper}>
         <Sort order={order} setOrder={setOrder} />
         <div className={styles.projects_list}>
-          {sortedProjects.map((project) => (
+          {sortedProjects.map((project, index) => (
             <Project
+              index={index}
               videos={videos}
               setVideos={setVideos}
               setActiveVideo={setActiveVideo}

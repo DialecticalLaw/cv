@@ -1,4 +1,5 @@
 .project {
+  opacity: 0;
   display: grid;
   grid-template: 1fr 1fr / 70% 30%;
   gap: 1rem 2rem;
@@ -7,6 +8,9 @@
   outline: 0.1rem solid transparent;
   transition: 0.2s;
   border-radius: 1rem;
+  transform: translateY(-50%);
+  transform-origin: top;
+  animation: appear 0.3s calc(var(--index) * 0.1s) forwards;
   cursor: pointer;
 }
 
@@ -31,4 +35,11 @@
 .project:hover {
   transition: none;
   outline-color: var(--weak-color);
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
