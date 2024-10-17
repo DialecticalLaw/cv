@@ -7,9 +7,9 @@ export function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
-          <NavLink href="/">Обо мне</NavLink>
-          <NavLink href="/skills">Навыки</NavLink>
-          <NavLink href="/projects">Проекты</NavLink>
+          <NavLink href="/">summary</NavLink>
+          <NavLink href="/skills">skills</NavLink>
+          <NavLink href="/projects">projects</NavLink>
         </ul>
       </nav>
 

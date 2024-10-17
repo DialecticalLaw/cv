@@ -1,4 +1,9 @@
 {
+  "Shared": {
+    "summary": "Summary",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
   "HomePage": {
     "name": "Denis Shmuratkin",
     "location": "Location: Russia, Syktyvkar",
