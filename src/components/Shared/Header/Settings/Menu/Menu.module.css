@@ -7,10 +7,10 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  width: 25rem;
+  width: max-content;
   padding: 1.5rem;
   background-color: var(--bg-color);
-  border-radius: 1rem;
+  border-radius: 2rem;
   transform-origin: top;
   transform: scale(0) translateY(-50%);
   box-shadow:
@@ -18,6 +18,16 @@
     inset -0.2rem -0.2rem 0.2rem 0.1rem var(--dark-shadow),
     inset 0.4rem 0.4rem 1rem 0.1rem var(--light-shadow);
   transition: 0.2s;
+}
+
+.select {
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.option {
+  background-color: var(--bg-color);
 }
 
 .visible {
@@ -70,7 +80,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-color: var(--dark-color);
   filter: drop-shadow(0 0 0.8rem var(--dark-shadow));
   border-radius: 50%;
   transition: 0.3s;
@@ -79,5 +88,4 @@
 .input:checked + .switch::after {
   left: calc(100% - 3rem);
   background-image: url('../../../../../assets/img/moon.svg');
-  background-color: var(--bg-color);
 }

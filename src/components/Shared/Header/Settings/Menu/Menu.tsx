@@ -22,14 +22,20 @@ export function Menu({ isOpen, setOpen }: { isOpen: boolean; setOpen: React.Disp
   return (
     <div ref={menuRef} className={`${styles.wrapper} ${isOpen ? styles.visible : ''}`}>
       <select
+        className={styles.select}
         name="language"
         value={language}
         onChange={(e) => {
           setLanguage(e.target.value as Language);
         }}
       >
-        <option value="russian">Русский</option>
-        <option value="english">English</option>
+        <option className={styles.option} value="russian">
+          &#127479;&#127482; Русский
+        </option>
+        <option className={styles.option} value="english">
+          {' '}
+          &#127468;&#127463; English
+        </option>
       </select>
 
       <div className={styles.theme_wrapper}>
