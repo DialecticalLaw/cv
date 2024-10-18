@@ -7,6 +7,8 @@ import { Project } from '@/components/Project/Project';
 import { useSearchParams } from 'next/navigation';
 import { Details } from '@/components/Project/Details/Details';
 import { Sort } from '@/components/Sort/Sort';
+import { Title } from '@/components/Title/Title';
+import { useTranslations } from 'next-intl';
 
 const VIDEO_HEIGHT_PERCENTAGE = 45;
 const RIGHT_SHIFT = 90;
@@ -24,6 +26,7 @@ export default function Projects() {
   const searchParams = useSearchParams();
   const selectedProject = decodeURIComponent(searchParams.get('details') || '');
   const [order, setOrder] = useState<'asc' | 'desc'>(getDefaultOrder(searchParams.get('order')));
+  const t = useTranslations('ProjectsPage');
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
@@ -48,7 +51,7 @@ export default function Projects() {
 
   return (
     <section>
-      <h1>Проекты</h1>
+      <Title>{t('projects')}</Title>
       <div className={styles.wrapper}>
         <Sort order={order} setOrder={setOrder} />
         <div className={styles.projects_list}>
@@ -80,7 +83,7 @@ export default function Projects() {
               autoPlay
               muted
             >
-              Ваш браузер не поддерживает видео
+              {t('notSupportVideo')}
             </video>
           );
         })}

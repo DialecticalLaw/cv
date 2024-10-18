@@ -4,6 +4,7 @@ import { ProjectInfo } from '@/helpers/projects';
 import styles from './Project.module.css';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { memo } from 'react';
+import { useTranslations } from 'next-intl';
 
 export const Project = memo(function Project({
   projectInfo,
@@ -18,10 +19,11 @@ export const Project = memo(function Project({
   videos: string[];
   index: number;
 }) {
-  const { videoLink, title, shortDesc, date } = projectInfo;
+  const { videoLink, title, date } = projectInfo;
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const t = useTranslations('ProjectsPage');
 
   const openDetails = () => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
@@ -43,7 +45,7 @@ export const Project = memo(function Project({
       key={title}
     >
       <p className={styles.title}>{title}</p>
-      <p className={styles.desc}>{shortDesc}</p>
+      <p className={styles.desc}>{t(`${title}.short`)}</p>
       <p className={styles.date}>{date}</p>
     </div>
   );

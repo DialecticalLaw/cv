@@ -26,5 +26,61 @@
     "problem": "Problem solving",
     "ambiguity": "Working in ambiguity mode",
     "introspection": "Introspection"
+  },
+  "ProjectsPage": {
+    "projects": "Projects",
+    "descending": "New ones first",
+    "ascending": "The old ones first",
+    "notSupportVideo": "Your browser does not support video",
+    "view": "View",
+    "server": "Server",
+    "Library": {
+      "short": "Library Landing",
+      "full": "A landing page for selecting and selling books, inviting users to immerse themselves in the world of literature. The design, inspired by the coziness of a library, creates an atmosphere conducive to reading, while interactive elements make the process of searching and purchasing engaging."
+    },
+    "Image Gallery": {
+      "short": "Image Search via API",
+      "full": "An application that allows you to explore the rich world of free photographs. Using the Unsplash API, the app dynamically loads and displays images based on selected themes, turning the search into an engaging experience."
+    },
+    "Audio player": {
+      "short": "Music Player",
+      "full": "An audio player that offers an enjoyable music listening experience with a pleasant interface. Each track is accompanied by a unique background image that sets the mood. Users can easily control playback and switch between tracks at the press of a button, making the music enjoyment process comfortable and unobtrusive."
+    },
+    "2048": {
+      "short": "Number Merging Game",
+      "full": "\"2048\" is an engaging game that allows players to immerse themselves in a world of numbers and strategy. The standard gameplay is implemented, where merging tiles becomes the key to reaching the coveted number 2048. To enhance player engagement, a feature displaying the results of the last 10 games has been added, allowing players to track their progress, while the sound design creates an atmosphere and makes the gameplay more exciting, adding emotion to every action."
+    },
+    "Coffee House": {
+      "short": "Cozy Cafe Landing",
+      "full": "A cozy landing page for a café, inviting visitors to enjoy an atmosphere of comfort and warmth. The site consists of two pages, each designed with attention to detail, creating a visually appealing interface. The responsive design ensures easy access from various devices, and interactive elements allow users to easily explore the menu."
+    },
+    "Hangman": {
+      "short": "Hangman Game",
+      "full": "An interactive version of the classic Hangman game. Players try to guess a word by letters before their \"hero\" finds itself in danger."
+    },
+    "Nonograms": {
+      "short": "Japanese Puzzle",
+      "full": "A puzzle game where you need to find a hidden picture by looking at hints with numbers. The numbers are indicated at the top and left sides of the grid. Each number in these tables defines a block of black cells. The number signifies a continuous line of black cells, and they are arranged in the same order as the lines."
+    },
+    "Async Race": {
+      "short": "Managing a collection of cars",
+      "full": "\"Async Race\" is an application allowing users to manage a collection of remote-controlled cars and participate in exciting races. The main screen—\"Garage\"—includes a panel for creating and editing cars, where users can assign names and choose colors. Buttons for starting races, creating random cars, and managing controls for each car are available. Racing controls allow users to start and stop competitions, while the \"Winners\" section displays a leaderboard reflecting car numbers, names, win counts, and best times. Pagination makes it easy to browse a large number of cars, ensuring user-friendly application experience."
+    },
+    "Puzzle": {
+      "short": "Interactive English Learning",
+      "full": "An interactive mini-game aimed at developing English language skills. Players assemble sentences from mixed-up words, inspired by the Lingualeo Phrase Constructor. The game features various levels of difficulty, hint options, and a unique puzzle game with illustrations."
+    },
+    "Chat": {
+      "short": "Chat. Just chat.",
+      "full": "A messaging application that includes all the necessary features for convenient communication. Users can send, delete, and edit messages, track the delivery status of each message, and see who is online among the participants. This creates a dynamic and interactive communication atmosphere. To ensure the proper functioning of the application, a local server needs to be started, the link to which is provided below."
+    },
+    "Sloths's Galactic Store": {
+      "short": "Intergalactic Online Store",
+      "full": "Welcome to our e-commerce platform! We have created an online shopping experience that replicates the real-world experience in a digital setting. Our app provides users with a seamless and interactive experience from product discovery to check out 🚀. Our platform offers a wide range of products from different planets ⋆⭒˚.⋆🪐 ⋆⭒˚.⋆, which users can browse and add to their cart 🛒. Detailed product descriptions and features help users make informed decisions about what to purchase. The app includes features such as registration 📝, login 🔐, product search 🔍, and sorting 📶, to enhance the user experience."
+    },
+    "CV": {
+      "short": "Portfolio. You're already in it :)",
+      "full": "This portfolio was created to gather all my key projects made thus far and summarize my training (which, of course, never ends, as a developer must always learn). The project is built on React and NextJS. No third-party UI libraries were intentionally used."
+    }
   }
 }
