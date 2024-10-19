@@ -1,15 +1,18 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import styles from './Cloud.module.css';
-import cloudImage from '@/assets/img/cloud.png';
+import cloudLightImage from '@/assets/img/cloud.png';
+import cloudDarkImage from '@/assets/img/cloudNight.png';
 import Image from 'next/image';
+import { ThemeContext } from '@/helpers/ThemeContext';
 
 const shiftCoefficient = 0.4;
 
 export function Cloud() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const imageRef = useRef<HTMLImageElement>(null);
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
@@ -40,8 +43,8 @@ export function Cloud() {
       style={{
         transform: `translate(${pos.x}%, ${pos.y}%)`,
       }}
-      className={styles.cloud}
-      src={cloudImage}
+      className={`${styles.cloud} ${theme === 'dark' ? styles.small : ''}`}
+      src={theme === 'dark' ? cloudDarkImage : cloudLightImage}
       alt="cloud"
     />
   );

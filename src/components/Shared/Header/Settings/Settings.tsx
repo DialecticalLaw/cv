@@ -12,7 +12,7 @@ export function Settings() {
   return (
     <div className={styles.wrapper}>
       <button className={`${styles.settings} ${isOpen ? styles.open : ''}`} onClick={() => setOpen((prev) => !prev)}>
-        <Image priority className={styles.icon} src={settingsIcon} alt="settings" />
+        <Image priority className={`${styles.icon} invert`} src={settingsIcon} alt="settings" />
       </button>
 
       <Menu isOpen={isOpen} setOpen={setOpen} />

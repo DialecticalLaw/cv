@@ -27,12 +27,12 @@ export const Sort = memo(function Sort({
   const orderElem = {
     desc: (
       <p className={styles.text}>
-        {t('descending')} <Image className={styles.icon} src={descIcon} alt="desc" />
+        {t('descending')} <Image className={`${styles.icon} invert`} src={descIcon} alt="desc" />
       </p>
     ),
     asc: (
       <p className={styles.text}>
-        {t('ascending')} <Image className={styles.icon} src={ascIcon} alt="asc" />
+        {t('ascending')} <Image className={`${styles.icon} invert`} src={ascIcon} alt="asc" />
       </p>
     ),
   };

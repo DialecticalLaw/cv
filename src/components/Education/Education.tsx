@@ -20,7 +20,7 @@ export function Education() {
 
         <li className={styles.item}>
           <Image className={styles.icon} src={educationIcon} alt="education" />
-          <a target="_blank" className={styles.rs_link} href="https://rs.school/">
+          <a target="_blank" href="https://rs.school/">
             {t('courses')}
           </a>
           (pre-school | JS | react)

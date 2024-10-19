@@ -20,7 +20,11 @@ export function Contact({ children, src, alt }: { children: string; src: string;
     <li onClick={() => copy()} className={styles.list_item}>
       <Image className={styles.icon} src={src} alt={alt} />
       {children}
-      <Image className={styles.copy} src={isCopied ? checkmarkIcon : copyIcon} alt="copy" />
+      <Image
+        className={`${styles.copy} ${isCopied ? '' : 'invert'}`}
+        src={isCopied ? checkmarkIcon : copyIcon}
+        alt="copy"
+      />
     </li>
   );
 }

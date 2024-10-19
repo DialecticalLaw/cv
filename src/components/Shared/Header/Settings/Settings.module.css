@@ -9,8 +9,9 @@
   user-select: none;
   padding: 1rem;
   box-shadow:
-    0.6rem 0.6rem 1.3rem 0.1rem var(--dark-shadow),
-    inset 0 0 0.5rem 0 var(--dark-shadow);
+    0.5rem 0.5rem 1rem 0.1rem var(--dark-shadow),
+    inset 0.3rem 0.3rem 0.5rem 0 var(--light-shadow),
+    inset 0 0 0.5rem 0.1rem var(--dark-shadow);
   border: none;
   border-radius: 50%;
   background-color: var(--bg-color);
@@ -29,6 +30,10 @@
     inset 0.6rem 0.6rem 1.3rem 0.1rem var(--dark-shadow),
     inset -0.6rem -0.6rem 1.3rem 0.1rem var(--light-shadow);
   transform: scale(0.92);
+}
+
+.settings:has(.invert) {
+  filter: brightness(160%);
 }
 
 .icon {

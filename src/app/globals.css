@@ -11,14 +11,14 @@
 
 :root {
   --main-font: 'Jura';
-  --dark-shadow: rgb(165, 165, 165);
-  --light-shadow: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
   --bg-color: rgb(235, 235, 235);
-  --bg-color-contrast: rgb(175, 175, 175);
   --bg-color-transparent: rgba(170, 170, 170, 0.2);
-  --dark-color: rgb(62, 62, 62);
+  --light-shadow: rgb(255, 255, 255);
+  --dark-shadow: rgba(0, 0, 0, 0.25);
+  --accent-color: rgb(60, 60, 60);
+  --weak-color: rgba(60, 60, 60, 0.5);
   --dark-color-transparent: rgba(50, 50, 50, 0.85);
-  --weak-color: rgba(62, 62, 62, 0.4);
 }
 
 html {
@@ -36,13 +36,13 @@ html::-webkit-scrollbar,
 
 html::-webkit-scrollbar-thumb,
 .scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--dark-color-transparent);
+  background-color: var(--weak-color);
   border-radius: 1rem;
 }
 
 .scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: var(--weak-color) transparent;
+  scrollbar-color: var(--dark-color-transparent) transparent;
 }
 
 body {
@@ -62,6 +62,7 @@ button,
 select {
   font-family: var(--main-font);
   font-size: 1.8rem;
+  color: var(--text-color);
 }
 
 h1 {
@@ -82,6 +83,10 @@ h3 {
 ul,
 ol {
   list-style: none;
+}
+
+.invert {
+  filter: var(--invert);
 }
 
 .container {
@@ -127,7 +132,7 @@ ol {
   left: 0;
   height: 20vh;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 75%, #000000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--accent-color) 75%, var(--accent-color) 100%);
   animation: drop 6.5s 0s infinite forwards linear;
 }
 

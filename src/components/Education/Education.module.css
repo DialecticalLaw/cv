@@ -26,10 +26,6 @@
   transition: 0.2s;
 }
 
-.rs_link {
-  color: #000000;
-}
-
 .link:hover {
   transform: scale(1.1);
 }

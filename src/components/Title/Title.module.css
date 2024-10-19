@@ -10,5 +10,5 @@
 .line {
   width: 5rem;
   height: 0.2rem;
-  background-color: var(--weak-color);
+  background-color: var(--accent-color);
 }

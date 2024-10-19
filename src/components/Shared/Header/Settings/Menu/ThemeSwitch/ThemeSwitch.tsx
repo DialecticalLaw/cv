@@ -1,13 +1,16 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import styles from './ThemeSwitch.module.css';
+import { ThemeContext } from '@/helpers/ThemeContext';
 
 export function ThemeSwitch() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('light');
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <div className={styles.theme_wrapper}>
       <input
-        onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+        onChange={(e) => {
+          if (setTheme) setTheme(e.target.checked ? 'dark' : 'light');
+        }}
         checked={theme === 'dark'}
         className={styles.input}
         type="checkbox"

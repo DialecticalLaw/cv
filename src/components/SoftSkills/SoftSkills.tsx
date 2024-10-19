@@ -12,7 +12,7 @@ export function SoftSkills() {
     <section className={styles.section}>
       <Title>{t('softSkills')}</Title>
       <div className={styles.wrapper}>
-        <div className={styles.template} />
+        <div className={`${styles.template} invert`} />
         <Image className={styles.bulb} src={bulbIcon} alt="bulb" />
 
         {softSkills.map((skill) => (

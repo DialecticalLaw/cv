@@ -37,6 +37,7 @@
   height: 2rem;
   margin: auto 0;
   padding: 0.5rem;
+  background-color: var(--dark-color-transparent);
   background-image: url('../../../../../../assets/img/sun.svg');
   background-size: cover;
   background-position: center;
@@ -49,5 +50,6 @@
 
 .input:checked + .switch::after {
   left: calc(100% - 3rem);
+  background-color: var(--text-color);
   background-image: url('../../../../../../assets/img/moon.svg');
 }

@@ -16,7 +16,11 @@
 }
 
 .title {
-  filter: invert(100%) brightness(200%);
+  color: #ffffff;
+}
+
+.lines:not(:focus) {
+  background-color: #ffffff;
 }
 
 .grid {
@@ -47,7 +51,7 @@
 
 .cell:hover {
   filter: none;
-  box-shadow: inset 0 0 2rem 0.1rem var(--dark-color);
+  box-shadow: inset 0 0 2rem 0.1rem var(--accent-color);
 }
 
 .cell:hover .icon {

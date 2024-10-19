@@ -9,7 +9,9 @@ export function HardSkills() {
 
   return (
     <section className={styles.section}>
-      <Title classes={[styles.title]}>{t('hardSkills')}</Title>
+      <Title linesStyles={[styles.lines]} textStyles={[styles.title]}>
+        {t('hardSkills')}
+      </Title>
       <div className={styles.grid}>
         {hardSkills.map((skill) => (
           <div className={`${styles.cell} ${styles[skill.abbr]}`} key={skill.abbr}>

@@ -35,11 +35,11 @@ export const Details = memo(function Details({ selectedProject }: { selectedProj
         <div className={styles.links_wrapper}>
           {data.serverLink && (
             <a target="_blank" className={`${styles.link} ${styles.server_link}`} href={data.serverLink}>
-              {t('server')} <Image src={externalIcon} className={styles.small_icon} alt="external" />
+              {t('server')} <Image src={externalIcon} className={`${styles.small_icon} invert`} alt="external" />
             </a>
           )}
           <a target="_blank" className={`${styles.link} ${styles.view_link}`} href={data.deployLink}>
-            {t('view')} <Image src={externalIcon} className={styles.small_icon} alt="external" />
+            {t('view')} <Image src={externalIcon} className={`${styles.small_icon} invert`} alt="external" />
           </a>
         </div>
       </div>

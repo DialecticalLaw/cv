@@ -14,7 +14,7 @@ export function Intro() {
       <h1 className={styles.name}>{t('name')}</h1>
       <h2 className={styles.role}>&lt;Frontend Developer /&gt;</h2>
       <p className={styles.location}>
-        <Image className={styles.icon} src={locationIcon} alt="location" /> {t('location')}
+        <Image className={`${styles.icon} invert`} src={locationIcon} alt="location" /> {t('location')}
       </p>
       <Cloud />
     </section>
