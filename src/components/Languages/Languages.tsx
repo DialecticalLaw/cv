@@ -10,7 +10,7 @@ export function Languages() {
   const t = useTranslations('HomePage');
 
   return (
-    <section>
+    <section className={styles.section}>
       <Title>{t('languages')}</Title>
       <ul className={styles.list}>
         <li className={styles.item}>

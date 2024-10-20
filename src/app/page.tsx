@@ -9,13 +9,12 @@ export default function Home() {
   return (
     <>
       <Intro />
-      <div className={styles.contacts_summary}>
+      <div className={styles.wrapper}>
         <Contacts />
         <Summary />
+        <Education />
+        <Languages />
       </div>
-
-      <Education />
-      <Languages />
     </>
   );
 }

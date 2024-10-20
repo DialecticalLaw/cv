@@ -9,7 +9,7 @@ export function Education() {
   const t = useTranslations('HomePage');
 
   return (
-    <section>
+    <section className={styles.section}>
       <Title>{t('education')}</Title>
 
       <ul className={styles.list}>
