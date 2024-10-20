@@ -42,7 +42,7 @@ html::-webkit-scrollbar-thumb,
 
 .scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: var(--dark-color-transparent) transparent;
+  scrollbar-color: var(--weak-color) transparent;
 }
 
 body {
