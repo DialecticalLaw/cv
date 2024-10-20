@@ -8,15 +8,28 @@ export function ThemeSwitch() {
   return (
     <div className={styles.theme_wrapper}>
       <input
-        onChange={(e) => {
-          if (setTheme) setTheme(e.target.checked ? 'dark' : 'light');
+        onChange={() => {
+          if (setTheme) setTheme('light');
+        }}
+        checked={theme === 'light'}
+        className={`${styles.input} ${styles.light}`}
+        type="radio"
+        name="theme"
+        value="light"
+      />
+      <div className={`${styles.sun} invert`} />
+
+      <input
+        onChange={() => {
+          if (setTheme) setTheme('dark');
         }}
         checked={theme === 'dark'}
-        className={styles.input}
-        type="checkbox"
+        className={`${styles.input} ${styles.dark}`}
+        type="radio"
         name="theme"
+        value="dark"
       />
-      <div className={styles.switch} />
+      <div className={`${styles.moon} invert`} />
     </div>
   );
 }
