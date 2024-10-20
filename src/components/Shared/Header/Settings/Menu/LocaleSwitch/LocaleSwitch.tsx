@@ -1,5 +1,5 @@
 import styles from './LocaleSwitch.module.css';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { setUserLocale } from '@/helpers/locale';
 import { Locale } from '@/i18n/config';
 import { useTransition } from 'react';
@@ -7,7 +7,6 @@ import { useTransition } from 'react';
 export function LocaleSwitch() {
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
-  const t = useTranslations('Shared');
 
   return (
     <>
@@ -26,7 +25,9 @@ export function LocaleSwitch() {
           &#127468;&#127463; English
         </option>
       </select>
-      <p className={`${styles.hint} ${isPending ? styles.visible : ''}`}>{t('translating')}</p>
+      <p className={`${styles.hint} ${isPending ? styles.visible : ''}`}>
+        {locale === 'ru' ? 'Translating...' : 'Перевожу...'}
+      </p>
     </>
   );
 }
