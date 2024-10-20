@@ -24,6 +24,7 @@
   right: 1.5rem;
   width: 4rem;
   height: 4rem;
+  opacity: 0.5;
   background-color: transparent;
   border: none;
   filter: grayscale(100%);
@@ -42,7 +43,7 @@
 }
 
 .wrapper:hover .close {
-  filter: none;
+  opacity: 1;
 }
 
 .close:hover {

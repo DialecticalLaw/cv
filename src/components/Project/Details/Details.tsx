@@ -25,7 +25,7 @@ export const Details = memo(function Details({ selectedProject }: { selectedProj
   return (
     <div className={styles.wrapper}>
       <button className={styles.close} onClick={closeDetails}>
-        <Image className={styles.icon} src={closeIcon} alt="close" />
+        <Image className={`${styles.icon} invert`} src={closeIcon} alt="close" />
       </button>
 
       <div className={styles.background} style={{ backgroundImage: `url('${data.imageLink}')` }} />
