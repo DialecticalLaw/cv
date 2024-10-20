@@ -1,5 +1,6 @@
 .cloud {
   z-index: -1;
+  user-select: none;
   position: absolute;
   inset: 0;
   margin: auto;
