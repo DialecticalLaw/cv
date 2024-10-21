@@ -15,7 +15,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       --bg-color-transparent: rgba(170, 170, 170, 0.2);
       --light-shadow: rgb(255, 255, 255);
       --dark-shadow: rgba(0, 0, 0, 0.25);
-      --accent-color: rgb(60, 60, 60);
+      --accent-color: rgb(0 153 247);
       --weak-color: rgba(60, 60, 60, 0.5);
       --dark-color-transparent: rgba(50, 50, 50, 0.85);`,
       dark: `
@@ -27,7 +27,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       --dark-shadow: rgba(0, 0, 0, 0.25);
       --accent-color: rgb(0, 194, 255);
       --weak-color: rgba(120, 120, 120, 0.5);
-      --dark-color-transparent: rgba(60, 60, 60, 0.85);`,
+      --dark-color-transparent: rgba(50, 50, 50, 0.85);`,
     };
     document.documentElement.setAttribute('style', colors[theme]);
   }, [theme]);

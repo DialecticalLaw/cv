@@ -1,0 +1,13 @@
+.icon {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 60%;
+  cursor: pointer;
+}
+
+.active,
+.active path {
+  stroke: var(--accent-color);
+  fill: var(--accent-color);
+}

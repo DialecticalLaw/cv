@@ -3,9 +3,9 @@ import styles from './Details.module.css';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import closeIcon from '@/assets/img/close.svg';
-import externalIcon from '@/assets/img/external.svg';
 import { memo } from 'react';
 import { useTranslations } from 'next-intl';
+import { ExternalIcon } from '@/components/Icons/ExternalIcon/ExternalIcon';
 
 export const Details = memo(function Details({ selectedProject }: { selectedProject: string }) {
   const router = useRouter();
@@ -35,11 +35,11 @@ export const Details = memo(function Details({ selectedProject }: { selectedProj
         <div className={styles.links_wrapper}>
           {data.serverLink && (
             <a target="_blank" className={`${styles.link} ${styles.server_link}`} href={data.serverLink}>
-              {t('server')} <Image src={externalIcon} className={`${styles.small_icon} invert`} alt="external" />
+              {t('server')} <ExternalIcon />
             </a>
           )}
           <a target="_blank" className={`${styles.link} ${styles.view_link}`} href={data.deployLink}>
-            {t('view')} <Image src={externalIcon} className={`${styles.small_icon} invert`} alt="external" />
+            {t('view')} <ExternalIcon />
           </a>
         </div>
       </div>

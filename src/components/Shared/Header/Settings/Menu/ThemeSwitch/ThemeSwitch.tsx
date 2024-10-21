@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import styles from './ThemeSwitch.module.css';
 import { ThemeContext } from '@/helpers/ThemeContext';
+import { SunIcon } from '@/components/Icons/SunIcon/SunIcon';
+import { MoonIcon } from '@/components/Icons/MoonIcon/MoonIcon';
 
 export function ThemeSwitch() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -17,7 +19,7 @@ export function ThemeSwitch() {
         name="theme"
         value="light"
       />
-      <div className={`${styles.sun} invert`} />
+      <SunIcon theme={theme} />
 
       <input
         onChange={() => {
@@ -29,7 +31,7 @@ export function ThemeSwitch() {
         name="theme"
         value="dark"
       />
-      <div className={`${styles.moon} invert`} />
+      <MoonIcon theme={theme} />
     </div>
   );
 }

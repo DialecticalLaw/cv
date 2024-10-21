@@ -46,7 +46,7 @@
   user-select: none;
   grid-column-start: 2;
   grid-row: 2 / 4;
-  filter: drop-shadow(0 -2rem 5rem yellow);
+  filter: drop-shadow(0 -2rem 5rem rgb(255, 255, 0));
 }
 
 .skill {

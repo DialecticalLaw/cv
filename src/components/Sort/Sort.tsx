@@ -1,10 +1,9 @@
 import { memo, useEffect } from 'react';
 import styles from './Sort.module.css';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import Image from 'next/image';
-import descIcon from '@/assets/img/sort-desc.svg';
-import ascIcon from '@/assets/img/sort-asc.svg';
 import { useTranslations } from 'next-intl';
+import { DescIcon } from '../Icons/DescIcon/DescIcon';
+import { AscIcon } from '../Icons/AscIcon/AscIcon';
 
 export const Sort = memo(function Sort({
   setOrder,
@@ -27,12 +26,12 @@ export const Sort = memo(function Sort({
   const orderElem = {
     desc: (
       <p className={styles.text}>
-        {t('descending')} <Image className={`${styles.icon} invert`} src={descIcon} alt="desc" />
+        {t('descending')} <DescIcon />
       </p>
     ),
     asc: (
       <p className={styles.text}>
-        {t('ascending')} <Image className={`${styles.icon} invert`} src={ascIcon} alt="asc" />
+        {t('ascending')} <AscIcon />
       </p>
     ),
   };

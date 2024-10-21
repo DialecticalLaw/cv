@@ -30,35 +30,3 @@
   appearance: none;
   cursor: pointer;
 }
-
-.input:checked + .sun,
-.input:hover + .sun,
-.input:checked + .moon,
-.input:hover + .moon {
-  opacity: 1;
-}
-
-.sun,
-.moon {
-  position: absolute;
-  width: 50%;
-  height: 60%;
-  opacity: 0.4;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.sun {
-  left: 0;
-  background-image: url('/sun.svg');
-  border-radius: 3rem 0 0 3rem;
-}
-
-.moon {
-  right: 0;
-  background-image: url('/moon.svg');
-  border-radius: 0 3rem 3rem 0;
-}
