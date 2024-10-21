@@ -3,8 +3,13 @@
 import { ThemeContext } from '@/helpers/ThemeContext';
 import { useEffect, useState } from 'react';
 
+function getTheme(): 'dark' | 'light' {
+  const savedTheme = localStorage.getItem('dialecticallaw-cv-theme');
+  return savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
+}
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<'dark' | 'light'>('light');
+  const [theme, setTheme] = useState<'dark' | 'light'>(getTheme());
 
   useEffect(() => {
     const colors = {
@@ -29,6 +34,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       --weak-color: rgba(120, 120, 120, 0.5);
       --dark-color-transparent: rgba(50, 50, 50, 0.85);`,
     };
+
+    localStorage.setItem('dialecticallaw-cv-theme', theme);
     document.documentElement.setAttribute('style', colors[theme]);
   }, [theme]);
 
