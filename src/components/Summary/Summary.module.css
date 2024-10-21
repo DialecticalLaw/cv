@@ -1,4 +1,5 @@
 .section {
+  position: relative;
   grid-column: 2 / 5;
   grid-row-start: 1;
   padding: 1.5rem;
@@ -7,4 +8,22 @@
     inset -0.3rem -0.3rem 0.2rem 0 var(--dark-shadow),
     0.4rem 0.4rem 1rem 0.1rem var(--dark-shadow),
     inset 0.4rem 0.4rem 1rem 0.1rem var(--light-shadow);
+}
+
+.location {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
 }
