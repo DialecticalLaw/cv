@@ -109,10 +109,10 @@ export const projects: ProjectInfo[] = [
   },
   {
     title: 'CV',
-    deployLink: '',
+    deployLink: 'https://dialecticallaw-cv.vercel.app/',
     serverLink: '',
     videoLink: null,
-    imageLink: '',
+    imageLink: '/pictures/cv.png',
     date: 'Oct 24, 2024',
   },
 ];
