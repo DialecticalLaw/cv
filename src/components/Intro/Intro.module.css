@@ -15,19 +15,19 @@
   width: 7rem;
   height: 7rem;
   margin: -8rem 0 -2rem 0;
-  animation: appear 1s 0.7s forwards;
+  animation: appear 1s 1s forwards;
 }
 
 .name {
   opacity: 0;
   transform: translateY(-100%);
-  animation: appear 1s 0.3s forwards;
+  animation: appear 1s 0.5s forwards;
 }
 
 .role {
   opacity: 0;
   transform: translateY(100%);
-  animation: appear 1s 0.3s forwards;
+  animation: appear 1s 0.5s forwards;
 }
 
 @keyframes appear {
