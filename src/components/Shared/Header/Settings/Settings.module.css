@@ -14,7 +14,7 @@
     inset 0 0 0.5rem 0.1rem var(--dark-shadow);
   border: none;
   border-radius: 50%;
-  background-color: var(--bg-color);
+  background-color: transparent;
   transition: 0.2s;
   cursor: pointer;
 }
