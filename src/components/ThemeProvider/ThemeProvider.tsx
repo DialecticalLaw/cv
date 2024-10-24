@@ -1,17 +1,19 @@
 'use client';
 
-import { ThemeContext } from '@/helpers/ThemeContext';
+import { Theme, ThemeContext } from '@/helpers/ThemeContext';
 import { useEffect, useState } from 'react';
 
-function getTheme(): 'dark' | 'light' {
-  const savedTheme = localStorage.getItem('dialecticallaw-cv-theme');
-  return savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
-}
-
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<'dark' | 'light'>(getTheme());
+  const [theme, setTheme] = useState<Theme>(null);
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem('dialecticallaw-cv-theme');
+    setTheme(savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light');
+  }, []);
+
+  useEffect(() => {
+    if (!theme) return;
+
     const colors = {
       light: `
       --invert: invert(0);
@@ -38,6 +40,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('dialecticallaw-cv-theme', theme);
     document.documentElement.setAttribute('style', colors[theme]);
   }, [theme]);
+
+  if (!theme) return;
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

@@ -1,6 +1,8 @@
 import { createContext } from 'react';
 
+export type Theme = 'dark' | 'light' | null;
+
 export const ThemeContext = createContext<{
-  theme: 'dark' | 'light';
-  setTheme?: React.Dispatch<React.SetStateAction<'dark' | 'light'>>;
+  theme: Theme;
+  setTheme?: React.Dispatch<React.SetStateAction<Theme>>;
 }>({ theme: 'light' });

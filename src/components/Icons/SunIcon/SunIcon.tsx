@@ -1,6 +1,7 @@
+import { Theme } from '@/helpers/ThemeContext';
 import styles from './SunIcon.module.css';
 
-export function SunIcon({ theme }: { theme: 'dark' | 'light' }) {
+export function SunIcon({ theme }: { theme: Theme }) {
   return (
     <svg
       className={`${styles.icon} ${theme === 'light' ? styles.active : ''}`}

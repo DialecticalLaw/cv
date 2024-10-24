@@ -47,8 +47,6 @@ html::-webkit-scrollbar-thumb,
 }
 
 body {
-  opacity: 0;
-  animation: appear 1s forwards;
   background-color: var(--bg-color);
 }
 
@@ -98,7 +96,9 @@ ol {
   align-items: center;
   min-height: 100dvh;
   overflow: hidden;
+  opacity: 0;
   margin: 0 auto;
+  animation: appear 1s forwards;
 }
 
 .main {

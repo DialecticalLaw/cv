@@ -1,6 +1,7 @@
+import { Theme } from '@/helpers/ThemeContext';
 import styles from './MoonIcon.module.css';
 
-export function MoonIcon({ theme }: { theme: 'dark' | 'light' }) {
+export function MoonIcon({ theme }: { theme: Theme }) {
   return (
     <svg
       className={`${styles.icon} ${theme === 'dark' ? styles.active : ''}`}
