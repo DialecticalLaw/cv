@@ -82,8 +82,8 @@
     opacity: 0;
     margin: 0 auto;
     padding: 6.5rem 1.5rem 1.5rem 1.5rem;
-    transform: translateY(-120%) scaleX(0);
-    border-radius: 0 0 15% 15%;
+    transform: translateY(-120%);
+    border-radius: 0 0 12% 12%;
     background-color: var(--dark-color-transparent);
     transition: 0.2s;
   }
