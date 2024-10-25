@@ -42,3 +42,16 @@
     transform-origin: left;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .nav_link {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav_link {
+    color: #ffffff;
+  }
+}

@@ -30,3 +30,10 @@
   appearance: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 850px) {
+  .theme_wrapper {
+    width: 7rem;
+    height: 3.5rem;
+  }
+}
