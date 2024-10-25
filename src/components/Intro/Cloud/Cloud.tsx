@@ -16,7 +16,7 @@ export function Cloud() {
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
-      if (!imageRef.current) return;
+      if (!imageRef.current || e.pointerType === 'touch') return;
       const imageMetrics = imageRef.current.getBoundingClientRect();
 
       const cursorCoords = { x: e.clientX, y: e.clientY };
