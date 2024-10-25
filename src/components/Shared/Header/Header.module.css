@@ -76,13 +76,14 @@
 
   .nav {
     position: fixed;
-    top: 6rem;
+    top: 0;
+    left: 0;
     right: 0;
     opacity: 0;
-    padding: 1.5rem;
-    transform-origin: bottom right;
-    transform: translateX(120%) scale(0);
-    border-radius: 1.5rem 0 0 1.5rem;
+    margin: 0 auto;
+    padding: 6.5rem 1.5rem 1.5rem 1.5rem;
+    transform: translateY(-120%) scaleX(0);
+    border-radius: 0 0 15% 15%;
     background-color: var(--dark-color-transparent);
     transition: 0.2s;
   }
