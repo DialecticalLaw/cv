@@ -36,3 +36,9 @@
     transform: none;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding: 15rem 0;
+  }
+}

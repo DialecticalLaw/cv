@@ -33,3 +33,16 @@
     transform: scale(1.3);
   }
 }
+
+@media screen and (max-width: 450px) {
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .list_item {
+    padding-left: 0;
+  }
+}

@@ -168,3 +168,29 @@ ol {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 450px) {
+  p,
+  span,
+  a,
+  li,
+  h1,
+  h2,
+  h3,
+  button,
+  select {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}

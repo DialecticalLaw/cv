@@ -15,14 +15,19 @@ export function Languages() {
       <ul className={styles.list}>
         <li className={styles.item}>
           <Image className={styles.icon} src={russiaIcon} alt="russia" />
-          <b>{t('ruLang')}</b> - {t('ruLangLevel')}
+          <div className={styles.info_wrapper}>
+            <b>{t('ruLang')}</b> - {t('ruLangLevel')}
+          </div>
         </li>
+
         <li className={styles.item}>
           <Image className={styles.icon} src={englandIcon} alt="england" />
-          <b>{t('enLang')}</b> - B1{' '}
-          <a target="_blank" href="https://cert.efset.org/ru/SgsuKd">
-            <Image className={styles.small_icon} src={certificateIcon} alt="certificate" />
-          </a>
+          <div className={styles.info_wrapper}>
+            <b>{t('enLang')}</b> - B1{' '}
+            <a target="_blank" href="https://cert.efset.org/ru/SgsuKd">
+              <Image className={styles.small_icon} src={certificateIcon} alt="certificate" />
+            </a>
+          </div>
         </li>
       </ul>
     </section>

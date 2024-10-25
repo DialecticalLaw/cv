@@ -1,6 +1,6 @@
 .section {
   grid-row-start: 2;
-  grid-column: 1 / 4;
+  grid-column: 1 / 3;
   padding: 1.5rem;
   border-radius: 2.5rem;
   background-color: var(--bg-color-transparent);
@@ -14,7 +14,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 .item {
@@ -27,6 +27,18 @@
   width: 4rem;
   height: 4rem;
   filter: drop-shadow(0.4rem 0.4rem 0.8rem var(--dark-shadow));
+}
+
+.info_wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.certificates {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .certificate {
@@ -50,5 +62,18 @@
 
   .link:hover {
     transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .icon {
+    width: 3rem;
+    height: 3rem;
   }
 }
