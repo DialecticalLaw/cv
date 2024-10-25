@@ -26,11 +26,6 @@
   transform: scaleX(1);
 }
 
-.nav_item:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
 .nav_link {
   display: block;
   width: 100%;
@@ -39,4 +34,11 @@
   text-decoration: none;
   font-size: 2.2rem;
   font-weight: bold;
+}
+
+@media (hover: hover) {
+  .nav_item:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }

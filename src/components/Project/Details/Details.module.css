@@ -37,14 +37,6 @@
   height: 100%;
 }
 
-.wrapper:hover .close {
-  opacity: 1;
-}
-
-.close:hover {
-  transform: scale(1.1);
-}
-
 .background {
   width: 100%;
   height: 45%;
@@ -98,15 +90,25 @@
   transition: 0.2s;
 }
 
-.link:hover {
-  color: var(--accent-color);
-}
-
 @keyframes appear {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@media (hover: hover) {
+  .wrapper:hover .close {
+    opacity: 1;
+  }
+
+  .close:hover {
+    transform: scale(1.1);
+  }
+
+  .link:hover {
+    color: var(--accent-color);
   }
 }

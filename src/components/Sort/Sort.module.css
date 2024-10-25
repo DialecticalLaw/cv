@@ -13,6 +13,8 @@
   transition: 0.2s;
 }
 
-.text:hover {
-  color: var(--accent-color);
+@media (hover: hover) {
+  .text:hover {
+    color: var(--accent-color);
+  }
 }

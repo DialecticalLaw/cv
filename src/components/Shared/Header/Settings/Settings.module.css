@@ -19,10 +19,6 @@
   cursor: pointer;
 }
 
-.settings:hover .icon {
-  transform: rotate(120deg);
-}
-
 .settings:active,
 .settings.open {
   box-shadow:
@@ -40,4 +36,10 @@
   width: 3rem;
   height: 3rem;
   transition: 0.4s;
+}
+
+@media (hover: hover) {
+  .settings:hover .icon {
+    transform: rotate(120deg);
+  }
 }
