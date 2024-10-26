@@ -128,3 +128,65 @@
     color: #ffffff;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .grid {
+    height: 75rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .caption {
+    font-size: 1.4rem;
+  }
+
+  .icon {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .grid {
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .grid {
+    height: 50rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid {
+    height: initial;
+    grid-template: repeat(7, 1fr) / repeat(2, 50%);
+    grid-template-areas:
+      'ts js'
+      'html css'
+      'react next'
+      'redux mui'
+      'vite webpack'
+      'jest vitest'
+      'git git';
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    row-gap: 1.5rem;
+  }
+
+  .cell {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .icon {
+    width: 70%;
+    height: 70%;
+  }
+
+  .caption {
+    font-size: 1.5rem;
+  }
+}
