@@ -113,6 +113,6 @@ export const projects: ProjectInfo[] = [
     serverLink: '',
     videoLink: null,
     imageLink: '/pictures/cv.png',
-    date: 'Oct 24, 2024',
+    date: 'Oct 27, 2024',
   },
 ];
