@@ -30,6 +30,7 @@ export default function Projects() {
 
   useEffect(() => {
     const updateCoords = (e: PointerEvent) => {
+      if (window.innerWidth < 980 || e.pointerType === 'touch') return;
       const videoHeight = window.innerHeight * (VIDEO_HEIGHT_PERCENTAGE / 100);
       const x = e.clientX + RIGHT_SHIFT;
       let y = e.clientY - videoHeight / 2;

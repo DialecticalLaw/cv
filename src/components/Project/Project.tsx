@@ -35,8 +35,8 @@ export const Project = memo(function Project({
     <div
       style={{ '--index': index } as React.CSSProperties}
       onClick={openDetails}
-      onPointerEnter={() => {
-        if (!videoLink) return;
+      onPointerEnter={(e) => {
+        if (!videoLink || window.innerWidth < 980 || e.pointerType === 'touch') return;
         if (!videos.includes(videoLink)) setVideos((prev) => [...prev, videoLink]);
         setActiveVideo(videoLink);
       }}
