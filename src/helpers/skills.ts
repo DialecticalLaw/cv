@@ -53,4 +53,4 @@ export const hardSkills = [
   },
 ];
 
-export const softSkills = ['communication', 'mentoring', 'problem', 'ambiguity', 'introspection'];
+export const softSkills = ['communication', 'teamwork', 'problem', 'ambiguity', 'introspection'];
