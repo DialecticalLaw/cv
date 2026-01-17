@@ -5,6 +5,17 @@
   padding-bottom: 4rem;
 }
 
+.not_found_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.not_found_link {
+  font-size: 3rem;
+}
+
 @media screen and (max-width: 950px) {
   .wrapper {
     gap: 3rem;
