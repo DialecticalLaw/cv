@@ -24,7 +24,7 @@ export function Contacts() {
         </Contact>
         <div className={styles.divider} />
         <Contact src={telegramIcon} alt="telegram">
-          prxmc
+          prxmc_second
         </Contact>
         <div className={styles.divider} />
         <Contact src={githubIcon} alt="github">
