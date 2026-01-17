@@ -1,6 +1,7 @@
 .section {
   grid-column-start: 1;
   grid-row-start: 1;
+  height: max-content;
   padding: 1.5rem;
   border-radius: 2.5rem;
   background-color: var(--bg-color-transparent);

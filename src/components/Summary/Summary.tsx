@@ -10,7 +10,7 @@ export function Summary() {
   return (
     <section className={styles.section}>
       <Title>{t('summary')}</Title>
-      <p>{t('summaryText')}</p>
+      <p className={styles.summary}>{t('summaryText')}</p>
       <p className={styles.location}>
         <Image className={`${styles.icon} invert`} src={locationIcon} alt="location" /> {t('location')}
       </p>

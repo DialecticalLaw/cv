@@ -12,6 +12,10 @@
   transition: 0.2s;
 }
 
+.summary {
+  line-height: 3rem;
+}
+
 .location {
   position: absolute;
   left: 0;
