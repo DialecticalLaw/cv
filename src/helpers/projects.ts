@@ -2,6 +2,7 @@ export interface ProjectInfo {
   title: string;
   deployLink: string;
   serverLink: string;
+  codeLink: string;
   videoLink: string | null;
   imageLink: string;
   date: string;
@@ -12,6 +13,7 @@ export const projects: ProjectInfo[] = [
     title: 'Library',
     deployLink: 'https://dialecticallaw.github.io/first-training-projects/library/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/first-training-projects/tree/library',
     videoLink:
       'https://www.dropbox.com/scl/fi/5ksoqtu4fso3mlinpg3xv/library.mp4?rlkey=akj6coy2n5lxs9sqn0a85xp6k&st=01tzh0vv&dl=0&raw=1',
     imageLink: '/pictures/library.png',
@@ -21,6 +23,7 @@ export const projects: ProjectInfo[] = [
     title: 'Image Gallery',
     deployLink: 'https://dialecticallaw.github.io/first-training-projects/image-galery/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/first-training-projects/tree/image-gallery',
     videoLink:
       'https://www.dropbox.com/scl/fi/jmz8n4p08obuizu504uqa/image_gallery.mp4?rlkey=yr19hco87b8f7unwp1xu5n69g&st=34bgeeps&dl=0&raw=1',
     imageLink: '/pictures/image_gallery.png',
@@ -30,6 +33,7 @@ export const projects: ProjectInfo[] = [
     title: 'Audio player',
     deployLink: 'https://dialecticallaw.github.io/first-training-projects/audio-player/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/first-training-projects/tree/audio-player',
     videoLink:
       'https://www.dropbox.com/scl/fi/txpwmyx07jyutuxymbj6u/audio_player.mp4?rlkey=o2jopic3827jtkpbsgtftjohb&st=dwwlzx6d&dl=0&raw=1',
     imageLink: '/pictures/audio_player.png',
@@ -39,6 +43,7 @@ export const projects: ProjectInfo[] = [
     title: '2048',
     deployLink: 'https://dialecticallaw.github.io/first-training-projects/random-game/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/first-training-projects/tree/random-game',
     videoLink:
       'https://www.dropbox.com/scl/fi/ynjhcpmc0lnqt897cgwvi/2048.mp4?rlkey=pgi1kbq6xeqqm8wk6auywa60q&st=6hmz6b9q&dl=0&raw=1',
     imageLink: '/pictures/2048.png',
@@ -48,6 +53,7 @@ export const projects: ProjectInfo[] = [
     title: 'Coffee House',
     deployLink: 'https://dialecticallaw.github.io/second-training-projects/coffee-house/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/second-training-projects/tree/coffee-house',
     videoLink:
       'https://www.dropbox.com/scl/fi/occ036xrz6imwh6t1h247/coffee_house.mp4?rlkey=8nld46e9nowrfvzi528t3ld25&st=7fk3d85e&dl=0&raw=1',
     imageLink: '/pictures/coffee_house.png',
@@ -57,6 +63,7 @@ export const projects: ProjectInfo[] = [
     title: 'Hangman',
     deployLink: 'https://dialecticallaw.github.io/second-training-projects/hangman/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/second-training-projects/tree/hangman',
     videoLink:
       'https://www.dropbox.com/scl/fi/vg5eycovq7zhy2bhyr1bz/hangman.mp4?rlkey=2yiain3xkus6f3pchxcs5u9rx&st=sivbzzrm&dl=0&raw=1',
     imageLink: '/pictures/hangman.png',
@@ -66,6 +73,7 @@ export const projects: ProjectInfo[] = [
     title: 'Nonograms',
     deployLink: 'https://dialecticallaw.github.io/second-training-projects/nonograms/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/second-training-projects/tree/nonograms',
     videoLink:
       'https://www.dropbox.com/scl/fi/m4tdu7wn5nypjtjx8klse/nonograms.mp4?rlkey=5t6wvaj07ey1plqa0e94fc06h&st=fn4vqzdb&dl=0&raw=1',
     imageLink: '/pictures/nonograms.png',
@@ -75,6 +83,7 @@ export const projects: ProjectInfo[] = [
     title: 'Async Race',
     deployLink: 'https://dialecticallaw.github.io/second-training-projects/async-race/',
     serverLink: 'https://github.com/mikhama/async-race-api',
+    codeLink: 'https://github.com/DialecticalLaw/second-training-projects/tree/async-race',
     videoLink:
       'https://www.dropbox.com/scl/fi/ggb0g0kdqe0e4q72wf768/async_race.mp4?rlkey=uysiwjyoxiuip6c03kqo0oqsg&st=2igz7t56&dl=0&raw=1',
     imageLink: '/pictures/async_race.png',
@@ -84,6 +93,7 @@ export const projects: ProjectInfo[] = [
     title: 'Puzzle',
     deployLink: 'https://dialecticallaw.github.io/second-training-projects/rss-puzzle/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/second-training-projects/tree/rss-puzzle',
     videoLink:
       'https://www.dropbox.com/scl/fi/py0cu0x5nvvicxw990tow/puzzle.mp4?rlkey=vg7y649zzuuvh4cp6omj6oko8&st=llh1ch6c&dl=0&raw=1',
     imageLink: '/pictures/puzzle.png',
@@ -93,6 +103,7 @@ export const projects: ProjectInfo[] = [
     title: 'Chat',
     deployLink: 'https://dialecticallaw.github.io/second-training-projects/fun-chat/',
     serverLink: 'https://github.com/rolling-scopes-school/fun-chat-server/tree/main',
+    codeLink: 'https://github.com/DialecticalLaw/second-training-projects/tree/fun-chat',
     videoLink:
       'https://www.dropbox.com/scl/fi/lq4sou0g9oa6ruu2tx0lb/chat.mp4?rlkey=u2vfwlyg6c0tbfbpv1z6s870a&st=h5di0d76&dl=0&raw=1',
     imageLink: '/pictures/chat.png',
@@ -102,6 +113,7 @@ export const projects: ProjectInfo[] = [
     title: "Sloths's Galactic Store",
     deployLink: 'https://sloths-galactic-store.netlify.app/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/sloths-final-task',
     videoLink:
       'https://www.dropbox.com/scl/fi/1swe7286q23555kw77ujp/sloths_galactic_store.mp4?rlkey=7teq6mywjecdwt7uhy6fj2jvh&st=3re2ti87&dl=0&raw=1',
     imageLink: '/pictures/sloths_galactic_store.png',
@@ -111,6 +123,7 @@ export const projects: ProjectInfo[] = [
     title: 'CV',
     deployLink: 'https://dialecticallaw-cv.vercel.app/',
     serverLink: '',
+    codeLink: 'https://github.com/DialecticalLaw/cv',
     videoLink: null,
     imageLink: '/pictures/cv.png',
     date: 'Oct 27, 2024',

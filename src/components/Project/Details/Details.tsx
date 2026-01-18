@@ -3,6 +3,7 @@ import styles from './Details.module.css';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import closeIcon from '@/assets/img/close.svg';
+import githubIcon from '@/assets/img/github.svg';
 import { memo, useCallback, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { ExternalIcon } from '@/components/Icons/ExternalIcon/ExternalIcon';
@@ -57,6 +58,9 @@ export const Details = memo(function Details({ selectedProject }: { selectedProj
                   {t('view')} <ExternalIcon />
                 </a>
               </div>
+              <a target="_blank" className={styles.code_link} href={data.codeLink}>
+                {t('code')} <Image className={styles.gh_icon} src={githubIcon} alt="code" />
+              </a>
             </div>
           </div>
         </>,
