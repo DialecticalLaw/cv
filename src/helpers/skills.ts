@@ -36,7 +36,7 @@ export const hardSkills = [
     abbr: 'webpack',
   },
   {
-    name: 'Redux',
+    name: 'Redux (Toolkit)',
     abbr: 'redux',
   },
   {
